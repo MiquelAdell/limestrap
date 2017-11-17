@@ -19,45 +19,12 @@
     -->
     <files>
         <css>
-            <filename>css/jquery-ui-custom.css</filename>
-            <filename>css/bootstrap-slider.css</filename>
-            <filename>css/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css</filename>
-            <filename>css/ubuntu_orange.css</filename>
-            <filename>css/template.css</filename>
-            <filename>css/template-ubuntu-orange.css</filename>
+            <filename>dist/styles/limestrap.css</filename>
         </css>
         <js>
-            <filename>scripts/template.js</filename>
-            <filename>scripts/bootstrap-slider.js</filename>
+            <filename>dist/scripts/limestrap.js</filename>
         </js>
-        <print_css>
-            <filename>css/print_template.css</filename>
-        </print_css>
 
-        <!--
-            Those files will be loaded for right to left languages only
-            NOTE 1: If for any reason, you need to edit the RTL behaviors, feel free to contact the LimeSurvey team about it.
-            We'll be always pleased to make better the right to left display
-
-            NOTE 2: those files are generated with the script R2. See: https://github.com/ded/R2
-        -->
-        <rtl>
-            <css>
-                <filename>css/jquery-ui-custom-rtl.css</filename>
-                <filename>css/bootstrap-slider-rtl.css</filename>
-                <filename>css/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox-rtl.css</filename>
-                <filename>css/ubuntu_orange-rtl.css</filename>
-                <filename>css/template-rtl.css</filename>
-                <filename>css/template-ubuntu-orange.css</filename>
-            </css>
-            <js>
-                <filename>scripts/template.js</filename>
-                <filename>scripts/bootstrap-slider.js</filename>
-            </js>
-            <print_css>
-                <filename>css/print_template-rtl.css</filename>
-            </print_css>
-        </rtl>
         <!-- The logo is used for now only for Surveys List  -->
         <logo>
             <filename>files/logo.png</filename>
@@ -66,18 +33,16 @@
 
     <!-- For template editor -->
     <files_editable>
-            <css>
-                <filename>css/ubuntu_orange.css</filename>
-                <filename>css/template.css</filename>
-            </css>
-            <js>
-                <filename>scripts/template.js</filename>
-                <filename>scripts/bootstrap-slider.js</filename>
-            </js>
+        <css>
+            <filename>css/limestrap.css</filename>
+        </css>
+        <js>
+            <filename>scripts/limestrap.js</filename>
+        </js>
     </files_editable>
 
     <engine>
-        <cssframework>bootstrap</cssframework>
+        <!-- <cssframework>bootstrap</cssframework> -->
         <pstpldirectory>views</pstpldirectory>
 
         <!--
@@ -88,10 +53,5 @@
             and add this line in it : 'allow_templates_to_overwrite_views'=>1
         -->
         <overwrite_question_views>false</overwrite_question_views>
-
-        <packages>
-            <package>jqueryui</package>
-            <package>jquery-touch-punch</package>
-        </packages>
     </engine>
 </config>
