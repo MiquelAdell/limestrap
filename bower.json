@@ -1,6 +1,6 @@
 {
   "name": "limestrap",
-  "description": "",
+  "description": "LimeSurvey (bootstrap+gulp+sass) Template.",
   "main": "index.html",
   "authors": [
     "Miquel Adell"

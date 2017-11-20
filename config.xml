@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <metadatas>
-        <name>Ubuntu Orange</name>
-        <creationDate>08/01/2016</creationDate>
-        <author>Louis-Sébastien Gac Artigas</author>
-        <authorEmail>louis.gac@limesurvey.org</authorEmail>
-        <authorUrl>http://www.limesurvey.org</authorUrl>
-        <copyright>Copyright (C) 2005 - 2016 LimeSurvey Gmbh, Inc. All rights reserved.</copyright>
+        <name>Limestrap</name>
+        <creationDate>20/11/2017</creationDate>
+        <author>Miquel Adell</author>
+        <authorEmail>miquel@miqueladell.com</authorEmail>
+        <authorUrl>http://www.miqueladell.com</authorUrl>
+        <copyright>Copyright (C) 2017 Miquel Adell.</copyright>
         <license>GNU General Public License version 2 or later</license>
         <version>1.0</version>
-        <description>LimeSurvey Template.</description>
-        <last_update>2016-05-13 10:46:00</last_update>
+        <description>LimeSurvey (bootstrap+gulp+sass) Template.</description>
+        <last_update>2017-10-20 10:46:00</last_update>
     </metadatas>
 
     <!--
@@ -19,25 +19,25 @@
     -->
     <files>
         <css>
-            <filename>dist/styles/limestrap.css</filename>
+            <filename>public/styles/limestrap.css.min</filename>
         </css>
         <js>
-            <filename>dist/scripts/limestrap.js</filename>
+            <filename>public/scripts/limestrap.js.min</filename>
         </js>
 
         <!-- The logo is used for now only for Surveys List  -->
         <logo>
-            <filename>files/logo.png</filename>
+            <filename>public/images/logo.png</filename>
         </logo>
     </files>
 
     <!-- For template editor -->
     <files_editable>
         <css>
-            <filename>css/limestrap.css</filename>
+            <filename>public/styles/limestrap.css.min</filename>
         </css>
         <js>
-            <filename>scripts/limestrap.js</filename>
+            <filename>public/scripts/limestrap.js.min</filename>
         </js>
     </files_editable>
 
