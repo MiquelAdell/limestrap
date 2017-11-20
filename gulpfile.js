@@ -15,6 +15,8 @@ var uglify = require('gulp-uglify');
 var clean = require('gulp-clean');
 var rename = require("gulp-rename");
 var runSequence = require('run-sequence');
+var gnf = require('gulp-npm-files');
+
 
 
 var config = {
@@ -82,6 +84,10 @@ gulp.task('images', function(){
 	.pipe(plumber({ errorHandler: function (error) { swallowError(this, error); } }))
 	.pipe(imagemin())
 	.pipe(gulp.dest(config.distDir + '/images'));
+});
+
+gulp.task('copy-dependencies', function() {
+  gulp.src(gnf(), {base:'./'}).pipe(gulp.dest('./build'));
 });
 
 gulp.task('clean', function(){

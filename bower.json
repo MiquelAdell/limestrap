@@ -15,10 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "awesome-bootstrap-checkbox": "^1.0.0",
-    "jquery-ui": "^1.12.1",
-    "bootstrap": "v4.0.0-alpha.6",
-    "jquery-ui-touch-punch": "*",
-    "seiyria-bootstrap-slider": "^10.0.0"
+    
   }
 }

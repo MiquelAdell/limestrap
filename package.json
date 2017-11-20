@@ -4,7 +4,12 @@
   "description": "LimeSurvey (bootstrap+gulp+sass) Template.",
   "main": "index.html",
   "dependencies": {
-
+    "awesome-bootstrap-checkbox": "^1.0.0",
+    "bootstrap": "v4.0.0-alpha.6",
+    "bootstrap-slider": "^10.0.0",
+    "gulp-npm-files": "^0.1.3",
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-touch-punch": "*"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
