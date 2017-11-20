@@ -25,6 +25,7 @@ var config = {
 
 function swallowError(self, error) {
 	console.log(error.toString());
+	browserSync.notify(error.message, 3000); // Display error in the browser
 	self.emit('end');
 }
 
@@ -34,7 +35,7 @@ gulp.task('styles', function() {
 
 gulp.task('styles-generate', function() {
 	return gulp.src(config.srcDir + '/styles/limestrap.scss')
-	//.pipe(plumber({ errorHandler: function (error) { swallowError(this, error); } }))
+	.pipe(plumber({ errorHandler: function (error) { swallowError(this, error); } }))
 	.pipe(sass({
 		includePaths: [config.bootstrapDir + '/assets/stylesheets'],
 	}))
@@ -43,23 +44,11 @@ gulp.task('styles-generate', function() {
 
 gulp.task('styles-minify', function() {
 	return gulp.src(config.distDir + '/styles/*.css')
-	//.pipe(plumber({ errorHandler: function (error) { swallowError(this, error); } }))
+	.pipe(plumber({ errorHandler: function (error) { swallowError(this, error); } }))
 	.pipe(cleanCSS({compatibility: 'ie8'}))
 	.pipe(rename({suffix: '.min'}))
-	.pipe(gulp.dest(config.distDir + '/styles'));
-});
-
-gulp.task('fonts', function() {
-	return gulp.src(config.bootstrapDir + '/assets/fonts/**/*')
-	//.pipe(plumber({ errorHandler: function (error) { swallowError(this, error); } }))
-	.pipe(gulp.dest(config.distDir + '/fonts'));
-});
-
-gulp.task('images', function(){
-	return gulp.src(config.srcDir + '/images/**')
-	//.pipe(plumber({ errorHandler: function (error) { swallowError(this, error); } }))
-	.pipe(imagemin())
-	.pipe(gulp.dest(config.distDir + '/images'));
+	.pipe(gulp.dest(config.distDir + '/styles'))
+	.pipe(browserSync.stream());
 });
 
 gulp.task('scripts', function() {
@@ -68,23 +57,36 @@ gulp.task('scripts', function() {
 
 gulp.task('scripts-generate', function(){
 	return gulp.src(config.srcDir + '/scripts/**.js')
-	//.pipe(plumber({ errorHandler: function (error) { swallowError(this, error); } }))
-	.pipe(concat('script.js'))
+	.pipe(plumber({ errorHandler: function (error) { swallowError(this, error); } }))
+	.pipe(concat('limestrap.js'))
 	.pipe(gulp.dest(config.distDir + '/scripts/'));
 });
 
 gulp.task('scripts-minify', function() {
 	return gulp.src(config.distDir + '/scripts/*.js')
-	//.pipe(plumber({ errorHandler: function (error) { swallowError(this, error); } }))
+	.pipe(plumber({ errorHandler: function (error) { swallowError(this, error); } }))
 	.pipe(stripDebug())
 	.pipe(uglify())
 	.pipe(rename({suffix: '.min'}))
 	.pipe(gulp.dest(config.distDir + '/scripts/'));
 });
 
+gulp.task('fonts', function() {
+	return gulp.src(config.bootstrapDir + '/assets/fonts/**/*')
+	.pipe(plumber({ errorHandler: function (error) { swallowError(this, error); } }))
+	.pipe(gulp.dest(config.distDir + '/fonts'));
+});
+
+gulp.task('images', function(){
+	return gulp.src(config.srcDir + '/images/**')
+	.pipe(plumber({ errorHandler: function (error) { swallowError(this, error); } }))
+	.pipe(imagemin())
+	.pipe(gulp.dest(config.distDir + '/images'));
+});
+
 gulp.task('clean', function(){
 	return gulp.src(config.distDir, {read: false})
-	//.pipe(plumber({ errorHandler: function (error) { swallowError(this, error); } }))
+	.pipe(plumber({ errorHandler: function (error) { swallowError(this, error); } }))
 	.pipe(clean());
 });
 
@@ -98,18 +100,23 @@ gulp.task('main', function(){
 gulp.task('default', ['clean-and-main']);
 
 gulp.task('watch', function () {
-	gulp.watch(config.srcDir + '/styles/**/**', ['styles', 'styles-minify']);
-	gulp.watch(config.srcDir + '/scripts/**/**', ['scripts', 'scripts-minify']);
+
+	gulp.watch(config.srcDir + '/styles/**/**', ['styles']);
+	gulp.watch(config.srcDir + '/scripts/**/**', ['scripts']);
 	gulp.watch(config.srcDir + '/images/**/**', ['images']);
-	var browserSyncWatchFiles = [
-		config.srcDir + '/styles/**/**',
+
+	var filesThatForceReload = [
 		config.srcDir + '/scripts/**/**',
-		config.srcDir + '/images/**/**'
+		config.srcDir + '/images/**/**',
+		'index.html'
 	];
+
 
 	var browserSyncOptions = {
 		proxy: "http://limesurvey.dev/templates/limestrap/index.html",
-		notify: false
+		notify: true
 	};
-	browserSync.init(browserSyncWatchFiles, browserSyncOptions);
+	browserSync.init(browserSyncOptions);
+
+	gulp.watch(filesThatForceReload).on('change', browserSync.reload);
 });
