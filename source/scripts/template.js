@@ -44,12 +44,7 @@ $(document).ready(function(){
 
 $(document).ready(function()
 {
-    if (jQuery.ui) {
-        document.getElementById('titleh2').innerHTML += "<br>loaded";
-    } else {
-        document.getElementById('titleh2').innerHTML += "<br>not loaded";
-    }
-
+    
     // Scroll to first error
     if($(".input-error").length > 0) {
         $('#bootstrap-alert-box-modal').on('hidden.bs.modal', function () {

@@ -135,7 +135,7 @@ gulp.task('default', function(){
 });
 
 gulp.task('watch', function () {
-	gulp.watch(config.srcDir + '/styles/**/**', ['styles']);
+	gulp.watch(config.srcDir + '/styles/*', ['styles']);
 	gulp.watch(config.srcDir + '/scripts/**/**', ['scripts']);
 	gulp.watch(config.srcDir + '/images/**/**', ['images']);
 

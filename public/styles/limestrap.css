@@ -9714,3 +9714,7 @@ table,
 
 .list-group {
   font-size: 14px; }
+
+body {
+  min-height: 75rem;
+  padding-top: 10rem; }
