@@ -15,27 +15,22 @@ var uglify = require('gulp-uglify');
 var clean = require('gulp-clean');
 var rename = require("gulp-rename");
 var runSequence = require('run-sequence');
+var print = require('gulp-print');
+var argv = require('yargs').argv;
+var gulpif = require('gulp-if');
+var zip = require('gulp-zip');
 
+var isProduction = (argv.production === undefined) ? false : true;
 
 var config = {
 	componentsDir: './node_modules',
 	distDir: './public',
 	srcDir: './source',
-	buildDir: './build',
 
 	browserSyncOptions: {
-		proxy: "http://limesurvey.dev/templates/limestrap/index.html",
+		proxy: "http://limesurvey.dev/limestrap/",
 		notify: true
 	}
-};
-
-config.dependencies = {
-	scripts: [
-		config.componentsDir + '/jquery-ui-dist/jquery-ui.min.js',
-		config.componentsDir + '/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'
-	],
-	styles: [
-	]
 };
 
 config.filesThatForceReload = [
@@ -45,18 +40,21 @@ config.filesThatForceReload = [
 ];
 
 
-function swallowError(self, error) {
-	console.log(error.toString());
-	browserSync.notify(error.message, 3000); // Display error in the browser
-	self.emit('end');
-}
+// function swallowError(self, error) {
+// 	console.log(error.toString());
+// 	browserSync.notify(error.message, 3000); // Display error in the browser
+// 	self.emit('end');
+// }
 
 gulp.task('styles', function() {
 
 	return gulp.src([
 		config.srcDir + '/styles/limestrap.scss',
 	])
-	.pipe(sourcemaps.init())
+	.pipe(print(function(filepath) {
+		return "building from: " + filepath;
+	}))
+	.pipe(gulpif(!isProduction, sourcemaps.init()))
 	.pipe(sass({
 		includePaths: [
 			config.componentsDir + '/bootstrap/scss/',
@@ -65,7 +63,6 @@ gulp.task('styles', function() {
 			config.componentsDir + '/font-awesome/scss/'
 		]
 	}))
-	.pipe(sourcemaps.init())
 
 	.pipe(autoprefixer({
 		browsers: ['last 2 versions'],
@@ -76,25 +73,37 @@ gulp.task('styles', function() {
 
 	.pipe(concat('limestrap.css'))
 	.pipe(rename({suffix: '.min'}))
-	.pipe(sourcemaps.write('.'))
+	.pipe(gulpif(!isProduction, sourcemaps.write('.')))
 
-	.pipe(browserSync.stream())
-	.pipe(gulp.dest(config.distDir + '/styles'));
+	.pipe(gulp.dest(config.distDir + '/styles'))
+	.pipe(print(function(filepath) {
+		return "built: " + filepath;
+	}))
+	.pipe(browserSync.stream());
 });
 
 gulp.task('scripts', function(){
 	return gulp.src([
-		config.srcDir + '/scripts/*.js',
-		config.buildDir + '/*.js'
+		config.componentsDir + '/jquery/dist/jquery.min.js',
+		config.componentsDir + '/jquery-ui-dist/jquery-ui.min.js',
+		config.componentsDir + '/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js',
+		config.srcDir + '/scripts/*.js'
 	])
-	.pipe(plumber({ errorHandler: function (error) { swallowError(this, error); } }))
-	.pipe(sourcemaps.init())
+	.pipe(print(function(filepath) {
+		return "building from: " + filepath;
+	}))
+
+	.pipe(gulpif(!isProduction, sourcemaps.init()))
 	.pipe(concat('limestrap.js'))
-	.pipe(stripDebug())
+	.pipe(gulp.dest(config.distDir + '/scripts/'))
+	// .pipe(stripDebug())
 	.pipe(uglify())
 	.pipe(rename({suffix: '.min'}))
-	.pipe(sourcemaps.write())
+	.pipe(gulpif(!isProduction, sourcemaps.write('.')))
 	.pipe(gulp.dest(config.distDir + '/scripts/'))
+	.pipe(print(function(filepath) {
+		return "built: " + filepath;
+	}))
 	.pipe(browserSync.stream());
 });
 
@@ -113,15 +122,8 @@ gulp.task('images', function(){
 	.pipe(gulp.dest(config.distDir + '/images'));
 });
 
-gulp.task('copy-dependencies', ['clean'], function() {
-	gulp.src(config.dependencies.styles)
-	.pipe(gulp.dest(config.buildDir));
-	gulp.src(config.dependencies.scripts)
-	.pipe(gulp.dest(config.buildDir));
-});
-
 gulp.task('clean', function(){
-	return gulp.src([config.distDir,config.buildDir], {read: false})
+	return gulp.src([config.distDir,'*.zip'], {read: false})
 	.pipe(clean());
 });
 
@@ -142,7 +144,37 @@ gulp.task('watch', function () {
 	gulp.watch(config.filesThatForceReload).on('change', browserSync.reload);
 });
 
+gulp.task('zip', function(){
+	return gulp
+		.src(
+			[
+				'**',
+				'!.git/',
+				'!.git/**',
+				'!node_modules/',
+				'!node_modules/**',
+				'!source/',
+				'!source/**',
+				'!.*',
+				'!gulpfile.js',
+				'!package.json',
+				'!package-lock.json',
+				'!index.html',
+			]
+		)
+		.pipe(print(function(filepath) {
+			return "zipping from: " + filepath;
+		}))
+        .pipe(zip('limestrap.zip'))
+		.pipe(print(function(filepath) {
+			return "zipping to: " + filepath;
+		}))
+        .pipe(gulp.dest('./'));
+});
 
-gulp.task('default', ['copy-dependencies'], function() {
+
+gulp.task('default', ['clean'], function() {
 	gulp.start(['styles','fonts', 'images', 'scripts']);
 });
+
+//.pipe(plumber({ errorHandler: function (error) { swallowError(this, error); } }))

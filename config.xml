@@ -19,10 +19,10 @@
     -->
     <files>
         <css>
-            <filename>public/styles/limestrap.css.min</filename>
+            <filename>public/styles/limestrap.css</filename>
         </css>
         <js>
-            <filename>public/scripts/limestrap.js.min</filename>
+            <filename>public/scripts/limestrap.js</filename>
         </js>
 
         <!-- The logo is used for now only for Surveys List  -->
@@ -34,10 +34,10 @@
     <!-- For template editor -->
     <files_editable>
         <css>
-            <filename>public/styles/limestrap.css.min</filename>
+            <filename>public/styles/limestrap.css</filename>
         </css>
         <js>
-            <filename>public/scripts/limestrap.js.min</filename>
+            <filename>public/scripts/limestrap.js</filename>
         </js>
     </files_editable>
 
