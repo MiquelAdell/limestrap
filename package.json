@@ -4,7 +4,7 @@
   "description": "LimeSurvey (bootstrap+gulp+sass) Template.",
   "main": "index.html",
   "dependencies": {
-    "awesome-bootstrap-checkbox": "^1.0.0",
+    "awesome-bootstrap-checkbox": "^1.0.0-alpha.2",
     "bootstrap": "v4.0.0-alpha.6",
     "bootstrap-slider": "^10.0.0",
     "font-awesome": "^4.7.0",
