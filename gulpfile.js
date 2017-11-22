@@ -71,7 +71,7 @@ gulp.task('styles', function() {
 	.pipe(cleanCSS({compatibility: 'ie8'}))
 
 	.pipe(concat('limestrap.css'))
-	.pipe(rename({suffix: '.min'}))
+	// .pipe(rename({suffix: '.min'}))
 	.pipe(gulpif(!isProduction, sourcemaps.write('.')))
 
 	.pipe(gulp.dest(config.distDir + '/styles'))
@@ -94,7 +94,7 @@ gulp.task('scripts', function(){
 	.pipe(gulp.dest(config.distDir + '/scripts/'))
 	// .pipe(stripDebug())
 	.pipe(uglify())
-	.pipe(rename({suffix: '.min'}))
+	// .pipe(rename({suffix: '.min'}))
 	.pipe(gulpif(!isProduction, sourcemaps.write('.')))
 	.pipe(gulp.dest(config.distDir + '/scripts/'))
 	.pipe(print(function(filepath) {
