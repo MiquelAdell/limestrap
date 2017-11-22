@@ -59,8 +59,7 @@ gulp.task('styles', function() {
 		includePaths: [
 			config.componentsDir + '/bootstrap/scss/',
 			config.componentsDir + '/awesome-bootstrap-checkbox/',
-			config.componentsDir + '/bootstrap-slider/src/sass/',
-			config.componentsDir + '/font-awesome/scss/'
+			config.componentsDir + '/bootstrap-slider/src/sass/'
 		]
 	}))
 
@@ -84,9 +83,6 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function(){
 	return gulp.src([
-		config.componentsDir + '/jquery/dist/jquery.min.js',
-		config.componentsDir + '/jquery-ui-dist/jquery-ui.min.js',
-		config.componentsDir + '/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js',
 		config.srcDir + '/scripts/*.js'
 	])
 	.pipe(print(function(filepath) {
@@ -107,15 +103,6 @@ gulp.task('scripts', function(){
 	.pipe(browserSync.stream());
 });
 
-gulp.task('fonts', function() {
-	return gulp.src(
-		[
-			config.componentsDir + '/font-awesome/fonts/**/*'
-		]
-	)
-	.pipe(gulp.dest(config.distDir + '/fonts'));
-});
-
 gulp.task('images', function(){
 	return gulp.src(config.srcDir + '/images/**')
 	.pipe(imagemin())
@@ -130,7 +117,7 @@ gulp.task('clean', function(){
 gulp.task('default', function(){
 	return runSequence(
 		'clean-and-copy',
-		['styles', 'fonts', 'images', 'scripts']
+		['styles', 'images', 'scripts']
 	);
 });
 
@@ -174,7 +161,7 @@ gulp.task('zip', function(){
 
 
 gulp.task('default', ['clean'], function() {
-	gulp.start(['styles','fonts', 'images', 'scripts']);
+	gulp.start(['styles','images', 'scripts']);
 });
 
 //.pipe(plumber({ errorHandler: function (error) { swallowError(this, error); } }))

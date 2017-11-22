@@ -1,315 +1,299 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ca">
 <head>
-	<meta charset="utf-8">
-	<title>Bootstrap 4 Demo</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="public/styles/limestrap.min.css">
+    <!-- SurveyRunTimeHelper --><!-- startpage.pstl -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+
+
+    <link rel="stylesheet" type="text/css" href="http://limesurvey.dev/third_party/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="public/styles/limestrap.css" />
+    <link rel="stylesheet" type="text/css" href="http://limesurvey.dev/styles-public/expressions.css" />
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 
-	<script src="public/scripts/limestrap.min.js" ></script>
+    <script type="text/javascript" src="http://limesurvey.dev/third_party/decimal/decimal.js"></script>
+    <script type="text/javascript" src="public/scripts/limestrap.js"></script>
+    <script type="text/javascript" src="http://limesurvey.dev/scripts/survey_runtime.js"></script>
+    <script type="text/javascript" src="http://limesurvey.dev/scripts/admin/expression.js"></script>
+    <script type="text/javascript" src="http://limesurvey.dev/scripts/expressions/em_javascript.js"></script>
+    <script type="text/javascript">
+    /*<![CDATA[*/
+    LSvar={"bFixNumAuto":1,"bNumRealValue":0,"sLEMradix":","};
+    showpopup=1;
+    startPopups=[];
+    /*]]>*/
+    </script>
+    <title>Esports Barcelona</title>
+    <meta name="generator" content="LimeSurvey http://www.limesurvey.org" />
 
+    <!-- The following line includes jquery-ui.css or jquery-ui-custom.css from template dir, template.css and needed specific css file for survey -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+
+    <!-- The following line includes jquery.js, jquery-ui.js, survey_runtime.js , template.js and needed specific js file for survey -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+    <link rel="shortcut icon" href="/upload/templates/limestrap/favicon.ico" />
 
 </head>
+<body class="default lang-ca questionbyquestion showqnumcode-C"><script type="text/javascript">
+/*<![CDATA[*/
+setJsVar();
+/*]]>*/
+</script>
 
 
-<body>
-    <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-      <div class="container">
-        <a href="../" class="navbar-brand">Bootswatch</a>
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">Esports Barcelona</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="../help/">Help</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="http://blog.bootswatch.com">Blog</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="download">Litera <span class="caret"></span></a>
-              <div class="dropdown-menu" aria-labelledby="download">
-                <a class="dropdown-item" href="https://jsfiddle.net/bootswatch/rnjfzjjo/">Open in JSFiddle</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="../4/litera/bootstrap.min.css">bootstrap.min.css</a>
-                <a class="dropdown-item" href="../4/litera/bootstrap.css">bootstrap.css</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="../4/litera/_variables.scss">_variables.scss</a>
-                <a class="dropdown-item" href="../4/litera/_bootswatch.scss">_bootswatch.scss</a>
-              </div>
-            </li>
-          </ul>
+            <ul class="nav navbar-nav ml-auto">
 
-          <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="http://builtwithbootstrap.com/" target="_blank">Built With Bootstrap</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://wrapbootstrap.com/?ref=bsw" target="_blank">WrapBootstrap</a>
-            </li>
-          </ul>
+                <li><a href="#" id="clearallbtnlink">Sortir i esborrar les respostes</a></li>
+
+            </ul>
 
         </div>
-      </div>
     </div>
-
-
-        <main role="main" class="container">
-          <div class="jumbotron">
-            <h1>Navbar example</h1>
-            <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser's viewport.</p>
-            <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
-          </div>
-        </main>
-
-
-<div class="container">
-    <h2 id="titleh2">Checkboxes</h2>
-    <form role="form">
-        <div class="row">
-            <div class="col-md-4">
-                <fieldset>
-                    <legend>
-                        Basic
-                    </legend>
-                    <p>
-                        Supports bootstrap brand colors: <code>.checkbox-primary</code>, <code>.checkbox-info</code> etc.
-                    </p>
-                    <div class="abc-checkbox">
-                        <input id="checkbox1" class="styled" type="checkbox">
-                        <label for="checkbox1">
-                            Default
-                        </label>
-                    </div>
-                    <div class="abc-checkbox abc-checkbox-primary">
-                        <input id="checkbox2" class="styled" type="checkbox" checked>
-                        <label for="checkbox2">
-                            Primary
-                        </label>
-                    </div>
-                    <div class="abc-checkbox abc-checkbox-success">
-                        <input id="checkbox3" class="styled" type="checkbox">
-                        <label for="checkbox3">
-                            Success
-                        </label>
-                    </div>
-                    <div class="abc-checkbox abc-checkbox-info">
-                        <input id="checkbox4" class="styled" type="checkbox">
-                        <label for="checkbox4">
-                            Info
-                        </label>
-                    </div>
-                    <div class="abc-checkbox abc-checkbox-warning">
-                        <input id="checkbox5" type="checkbox" class="styled" checked>
-                        <label for="checkbox5">
-                            Warning
-                        </label>
-                    </div>
-                    <div class="abc-checkbox abc-checkbox-danger">
-                        <input id="checkbox6" type="checkbox" class="styled" checked>
-                        <label for="checkbox6">
-                            Check me out
-                        </label>
-                    </div>
-                    <p>Checkboxes without label text</p>
-                    <div class="abc-checkbox">
-                        <input type="checkbox" class="styled" id="singleCheckbox1" value="option1" aria-label="Single checkbox One">
-                        <label></label>
-                    </div>
-                    <div class="abc-checkbox abc-checkbox-primary">
-                        <input type="checkbox" class="styled styled-primary" id="singleCheckbox2" value="option2" checked aria-label="Single checkbox Two">
-                        <label></label>
-                    </div>
-                    <p>Checkboxes with indeterminate state</p>
-                    <div class="abc-checkbox abc-checkbox-primary">
-                        <input id="indeterminateCheckbox" class="styled" type="checkbox" onclick="changeState(this)">
-                        <label></label>
-                    </div>
-                    <p>Inline checkboxes</p>
-                    <div class="abc-checkbox abc-checkbox-inline">
-                        <input type="checkbox" class="styled" id="inlineCheckbox1" value="option1">
-                        <label for="inlineCheckbox1"> Inline One </label>
-                    </div>
-                    <div class="abc-checkbox abc-checkbox-success abc-checkbox-inline">
-                        <input type="checkbox" class="styled" id="inlineCheckbox2" value="option1" checked>
-                        <label for="inlineCheckbox2"> Inline Two </label>
-                    </div>
-                    <div class="abc-checkbox abc-checkbox-inline">
-                        <input type="checkbox" class="styled" id="inlineCheckbox3" value="option1">
-                        <label for="inlineCheckbox3"> Inline Three </label>
-                    </div>
-                </fieldset>
-            </div>
-            <div class="col-md-4">
-                <fieldset>
-                    <legend>
-                        Circled
-                    </legend>
-                    <p>
-                        <code>.checkbox-circle</code> for roundness.
-                    </p>
-                    <div class="abc-checkbox abc-checkbox-circle">
-                        <input id="checkbox7" class="styled" type="checkbox">
-                        <label for="checkbox7">
-                            Simply Rounded
-                        </label>
-                    </div>
-                    <div class="abc-checkbox abc-checkbox-info abc-checkbox-circle">
-                        <input id="checkbox8" class="styled" type="checkbox" checked>
-                        <label for="checkbox8">
-                            Me too
-                        </label>
-                    </div>
-                </fieldset>
-            </div>
-            <div class="col-md-4">
-                <fieldset>
-                    <legend>
-                        Disabled
-                    </legend>
-                    <p>
-                        Disabled state also supported.
-                    </p>
-                    <div class="abc-checkbox">
-                        <input class="styled" id="checkbox9" type="checkbox" disabled>
-                        <label for="checkbox9">
-                            Can't check this
-                        </label>
-                    </div>
-                    <div class="abc-checkbox abc-checkbox-success">
-                        <input class="styled styled" id="checkbox10" type="checkbox" disabled checked>
-                        <label for="checkbox10">
-                            This too
-                        </label>
-                    </div>
-                    <div class="abc-checkbox abc-checkbox-warning abc-checkbox-circle">
-                        <input class="styled" id="checkbox11" type="checkbox" disabled checked>
-                        <label for="checkbox11">
-                            And this
-                        </label>
-                    </div>
-                </fieldset>
-            </div>
-        </div>
-    </form>
-    <h2>Radios</h2>
-    <form role="form">
-        <div class="row">
-            <div class="col-md-4">
-                <fieldset>
-                    <legend>
-                        Basic
-                    </legend>
-                    <p>
-                        Supports bootstrap brand colors: <code>.radio-primary</code>, <code>.radio-danger</code> etc.
-                    </p>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="radio">
-                                <input type="radio" name="radio1" id="radio1" value="option1" checked>
-                                <label for="radio1">
-                                    Small
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <input type="radio" name="radio1" id="radio2" value="option2">
-                                <label for="radio2">
-                                    Big
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="radio radio-danger">
-                                <input type="radio" name="radio2" id="radio3" value="option1">
-                                <label for="radio3">
-                                    Next
-                                </label>
-                            </div>
-                            <div class="radio radio-danger">
-                                <input type="radio" name="radio2" id="radio4" value="option2" checked>
-                                <label for="radio4">
-                                    One
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <p>Radios without label text</p>
-                    <div class="radio">
-                        <input type="radio" id="singleRadio1" value="option1" name="radioSingle1" aria-label="Single radio One">
-                        <label></label>
-                    </div>
-                    <div class="radio radio-success">
-                        <input type="radio" id="singleRadio2" value="option2" name="radioSingle1" checked aria-label="Single radio Two">
-                        <label></label>
-                    </div>
-                    <p>Inline radios</p>
-                    <div class="radio radio-info radio-inline">
-                        <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked>
-                        <label for="inlineRadio1"> Inline One </label>
-                    </div>
-                    <div class="radio radio-inline">
-                        <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
-                        <label for="inlineRadio2"> Inline Two </label>
-                    </div>
-                </fieldset>
-            </div>
-            <div class="col-md-4">
-                <fieldset>
-                    <legend>
-                        Disabled
-                    </legend>
-                    <p>
-                        Disabled state also supported.
-                    </p>
-                    <div class="radio radio-danger">
-                        <input type="radio" name="radio3" id="radio5" value="option1" disabled>
-                        <label for="radio5">
-                            Next
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="radio3" id="radio6" value="option2" checked disabled>
-                        <label for="radio6">
-                            One
-                        </label>
-                    </div>
-                </fieldset>
-            </div>
-            <div class="col-md-4">
-                <fieldset>
-                    <legend>
-                        As Checkboxes
-                    </legend>
-                    <p>
-                        Radios can be made to look like checkboxes.
-                    </p>
-                    <div class="abc-checkbox checkbox">
-                        <input type="radio" name="radio4" id="radio7" value="option1" checked>
-                        <label for="radio7">
-                            Default
-                        </label>
-                    </div>
-                    <div class="abc-checkbox abc-checkbox-success">
-                        <input type="radio" name="radio4" id="radio8" value="option2">
-                        <label for="radio8">
-                            Success
-                        </label>
-                    </div>
-                    <div class="abc-checkbox abc-checkbox-danger">
-                        <input type="radio" name="radio4" id="radio9" value="option3">
-                        <label for="radio9">
-                            Danger
-                        </label>
-                    </div>
-                </fieldset>
-            </div>
-        </div>
-    </form>
 </div>
+
+
+<!-- Top container -->
+<div id="topContainer" class="jumbotron">
+    <div class="container">
+
+
+    </div>
+</div>
+
+<div class="outerframe container" id="outerframeContainer">
+
+    <div class="row" id="main-row">
+
+        <div class='col-xs-12' id="yii-flash-message">
+
+        </div>
+
+        <div class="col-sm-12 col-centered" id="main-col">
+            <!-- end of startpage.pstl -->
+            <script type="text/javascript">
+            $("body").addClass("page-odd");
+            </script>
+            <form id="limesurvey" name="limesurvey" autocomplete="off" class="survey-form-container  surveyRunTime" action="/index.php/714663" method="post">
+                <input type="hidden" value="03945c695c5fe625a54eb814ed063f96f83f1b4f" name="YII_CSRF_TOKEN" />
+
+                <!-- INPUT NAMES -->
+                <input type='hidden' name='fieldnames' value='714663X67X1083' id='fieldnames' />
+                <button type="submit" id="defaultbtn" value="default" name="move" class="submit noview" style="display:none">default</button><!-- Survey Description survey.pstpl -->
+                <noscript role='alert' id='checkjavascript'><p class='alert alert-danger warningjs'>Avís: l&#039;execució de JavaScript està desactivada en el navegador. És possible que no puguis respondre totes les preguntes de l&#039;enquesta. Verifica els paràmetres del vostre navegador.</p></noscript>
+
+
+                <!-- START THE GROUP (in SurveyRunTime ) -->
+
+
+                <div id='group-0' class='row'>
+                    <!-- Start group -->
+                    <div class="col-xs-12 group-container">
+                        <h3 class="group-name"></h3>
+                    </div>
+
+
+
+
+                    <!-- PRESENT THE QUESTIONS (in SurveyRunTime )  -->
+                    <!-- Question -->
+                    <div  id="question1083" class="list-radio  mandatory col-xs-12 question-container">
+
+                        <!-- Question title -->
+                        <div class="row question-wrapper question-title-container">
+                            <div class="col-sm-12 questiontext">
+                                <div class="qnumcode question-text">
+                                    <span class="text-danger asterisk"></span>
+                                    a02Marca el teu sexe
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Question valid message -->
+                        <div class="row question-wrapper">
+                            <div class="col-sm-12 questionvalidcontainer">
+
+
+
+                            </div>
+                        </div>
+
+
+                        <!-- Answer -->
+                        <div class="row question-wrapper answer-container">
+                            <div class="col-sm-12 answer">
+
+                                <!-- List Radio -->
+
+                                <!-- answer -->
+                                <div class="list-unstyled radio-list answers-list">
+
+
+                                    <!-- answer_row -->
+                                    <div id='javatbd714663X67X1083A1' class='col-xs-12 form-group answer-item radio-item radio'  >
+                                        <input
+                                        class="radio"
+                                        type="radio"
+                                        value="A1"
+                                        name="714663X67X1083"
+                                        id="answer714663X67X1083A1"
+                                        onclick="if (document.getElementById('answer714663X67X1083othertext') != null) document.getElementById('answer714663X67X1083othertext').value='';checkconditions(this.value, this.name, this.type)"
+                                        aria-labelledby="label-answer714663X67X1083A1"
+                                        />
+                                        <label for="answer714663X67X1083A1" class="control-label radio-label"></label>
+
+                                        <!--
+                                        The label text is provided inside a div,
+                                        so final user can add paragraph, div, or whatever he wants in the subquestion text
+                                        This field is related to the input thanks to attribute aria-labelledby
+                                    -->
+                                    <div class="label-text label-clickable" id="label-answer714663X67X1083A1">
+                                        Femení    </div>
+                                    </div>
+                                    <!-- end of answer_row -->
+
+                                    <!-- answer_row -->
+                                    <div id='javatbd714663X67X1083A2' class='col-xs-12 form-group answer-item radio-item radio'  >
+                                        <input
+                                        class="radio"
+                                        type="radio"
+                                        value="A2"
+                                        name="714663X67X1083"
+                                        id="answer714663X67X1083A2"
+                                        onclick="if (document.getElementById('answer714663X67X1083othertext') != null) document.getElementById('answer714663X67X1083othertext').value='';checkconditions(this.value, this.name, this.type)"
+                                        aria-labelledby="label-answer714663X67X1083A2"
+                                        />
+                                        <label for="answer714663X67X1083A2" class="control-label radio-label"></label>
+
+                                        <!--
+                                        The label text is provided inside a div,
+                                        so final user can add paragraph, div, or whatever he wants in the subquestion text
+                                        This field is related to the input thanks to attribute aria-labelledby
+                                    -->
+                                    <div class="label-text label-clickable" id="label-answer714663X67X1083A2">
+                                        Masculí    </div>
+                                    </div>
+                                    <!-- end of answer_row -->
+
+                                    <input
+                                    type="hidden"
+                                    name="java714663X67X1083"
+                                    id="java714663X67X1083"
+                                    value=""
+                                    />
+                                </div>
+                                <!-- end of answer -->
+
+                            </div>
+                        </div>
+
+                        <!-- Question help -->
+                        <div class="row question-wrapper question-help-container">
+                            <div class="col-sm-12 question-help">
+
+                            </div>
+                        </div>
+                    </div>
+                    <input type='hidden' name='lastanswer' value='714663X67X1083' id='lastanswer' />
+
+
+                    <!-- END THE GROUP -->
+                    <!-- endgroup -->
+
+
+                </div>
+
+                <script type='text/javascript'>
+                <!--
+                var LEMmode='question';
+                var LEMqid=1083;
+                function ExprMgr_process_relevance_and_tailoring(evt_type,sgqa,type){
+                    if (typeof LEM_initialized == 'undefined') {
+                        LEM_initialized=true;
+                        LEMsetTabIndexes();
+                    }
+                    if (evt_type == 'onchange' && (typeof last_sgqa !== 'undefined' && sgqa==last_sgqa) && (typeof last_evt_type !== 'undefined' && last_evt_type == 'TAB' && type != 'checkbox')) {
+                        last_evt_type='onchange';
+                        last_sgqa=sgqa;
+                        return;
+                    }
+                    last_evt_type = evt_type;
+                    last_sgqa=sgqa;
+                    relChange1083=false;
+                    relChangeG0=false;
+
+                }
+                //-->
+                </script>
+                <input type='hidden' id='relevance1083' name='relevance1083' value='1'/>
+                <input type='hidden' id='relevanceG0' name='relevanceG0' value='1'/>
+                <input type='hidden' id='aQuestionsWithDependencies' data-qids='[]' />
+
+                <!-- PRESENT THE NAVIGATOR -->
+                <!-- Navigator hidden-xs-->
+                <div class="col-xs-12">
+                    <div class="row" id="navigator-container">
+                        <div class="col-xs-12 save-all hidden">
+
+                            <button type="submit" id="clearall" value="clearall" name="clearall" class="clearall button  btn btn-default btn-lg  col-xs-4 hidden" data-confirmedby="confirm-clearall" title="Aquesta acció necessita la teva confirmació">Sortir i esborrar les respostes</button><input id="confirm-clearall" value="confirm" class="hide jshide  btn btn-default btn-lg  col-xs-4" type="checkbox" name="confirm-clearall" /><label class="hide jshide  btn btn-default btn-lg  col-xs-4" for="confirm-clearall">Estàs segur que vols suprimir totes les respostes?</label>
+                        </div>
+                        <div class="col-xs-12 save-all">
+                            <hr/>
+                        </div>
+                        <div class="col-xs-6 save-all text-left">
+
+                        </div>
+                        <div class="col-xs-6 save-all text-right">
+                            <button type="submit" id="movenextbtn" value="movenext" name="movenext" accesskey="n" class="submit button btn btn-lg  btn-primary">Següent</button>
+                        </div>
+                    </div>
+                </div>
+
+                <p style='text-align:center' class='error'>Actualment aquesta enquesta no està activa. No podràs guardar les respostes.</p>
+                <!-- generated in SurveyRuntimeHelper --><input type='hidden' name='thisstep' value='2' id='thisstep' />
+                <input type='hidden' name='sid' value='714663' id='sid' />
+                <input type='hidden' name='start_time' value='1511285843' id='start_time' />
+                <input type='hidden' name='LEMpostKey' value='30050010' id='LEMpostKey' />
+            </form>
+        </div> <!-- main-col -->
+    </div><!-- main-row -->
+</div><!-- outerframe -->
+
+<!-- Bootstrap Modal Alert -->
+<div id="bootstrap-alert-box-modal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="min-height:40px;">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">&nbsp;</h4>
+            </div>
+            <div class="modal-body"><p></p></div>
+            <div class="modal-footer">
+                <a href="#" data-dismiss="modal" class="btn btn-default">Tancar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>

@@ -6,10 +6,6 @@
   "dependencies": {
     "awesome-bootstrap-checkbox": "^1.0.0-alpha.2",
     "bootstrap": "v4.0.0-alpha.6",
-    "bootstrap-slider": "^10.0.0",
-    "font-awesome": "^4.7.0",
-    "jquery-ui-dist": "^1.12.1",
-    "jquery-ui-touch-punch": "*"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
