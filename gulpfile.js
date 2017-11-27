@@ -152,7 +152,7 @@ gulp.task('zip', function(){
 		.pipe(print(function(filepath) {
 			return "zipping from: " + filepath;
 		}))
-        .pipe(zip('limestrap.zip'))
+        .pipe(zip('esports_barcelona.zip'))
 		.pipe(print(function(filepath) {
 			return "zipping to: " + filepath;
 		}))
