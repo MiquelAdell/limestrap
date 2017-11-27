@@ -1,13 +1,13 @@
-function change_hidden_values($checkbox_or_radio){
-    var id = $checkbox_or_radio.prop('id');
-    var slug = id.split("_");
-    slug = slug.shift();
+function change_hidden_values($checkbox){
+    var id = $checkbox.prop('id');
+    var slug = id.split('_');
+    slug.shift();
     slug = slug.join("_");
-    if($checkbox_or_radio.prop('checked') === true) {
-        $('#answer'+slug).value(1);
-        $('#java'+slug).value(1);
+    if($checkbox.prop('checked') === true) {
+        $('#answer'+slug).val(1);
+        $('#java'+slug).val(1);
     } else {
-        $('#answer'+slug).value(0);
-        $('#java'+slug).value(0);
+        $('#answer'+slug).val(null);
+        $('#java'+slug).val(null);
     }
 }

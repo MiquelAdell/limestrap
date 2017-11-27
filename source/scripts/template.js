@@ -44,7 +44,7 @@ $(document).ready(function(){
 
 $(document).ready(function()
 {
-    
+
     // Scroll to first error
     if($(".input-error").length > 0) {
         $('#bootstrap-alert-box-modal').on('hidden.bs.modal', function () {
@@ -232,7 +232,6 @@ $(document).ready(function()
 
 
 });
-
 
 window.alert = function(message, title) {
     if($("#bootstrap-alert-box-modal").length == 0) {

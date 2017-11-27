@@ -1,6 +1,7 @@
 $hover-color: desaturate(lighten($success,30%),40%);
 $other: lighten($brand-primary,20%);
-.question {
+
+.answer-container {
     table {
       overflow: hidden;
     }
@@ -11,7 +12,7 @@ $other: lighten($brand-primary,20%);
       outline: 0;
     }
 
-    body:not(.nohover) tbody tr:hover {
+    body:not(.nohover) & tbody tr:hover {
       background-color: $hover-color;
     }
 

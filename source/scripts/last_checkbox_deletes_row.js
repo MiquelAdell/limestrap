@@ -8,7 +8,9 @@ jQuery( document ).ready(function( $ ) {
                     var thisTr = $(this).closest('tr');
                     thisTr.find(':checkbox').prop('checked', false);
                     lastCheckbox.prop('checked', true);
-                    change_hidden_values(thisTr.find(':checkbox'));
+                    thisTr.find(':checkbox').each(function(){
+                        change_hidden_values($(this));
+                    });
                 }
             });
         });
