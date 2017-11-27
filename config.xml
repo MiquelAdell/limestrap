@@ -53,5 +53,9 @@
             and add this line in it : 'allow_templates_to_overwrite_views'=>1
         -->
         <overwrite_question_views>false</overwrite_question_views>
+        <packages>
+            <package>jqueryui</package>
+            <package>jquery-touch-punch</package>
+        </packages>
     </engine>
 </config>
