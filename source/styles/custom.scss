@@ -1,4 +1,93 @@
 body {
     min-height: 75rem;
-    padding-top: 10rem;
+    padding-top: 58px;
+}
+
+$brand-primary: #f6ca00;
+$brand-secondary: #dc3545;
+
+.checkbox input[type=checkbox]:checked+label::before, .checkbox input[type=radio]:checked+label::before {
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+}
+
+.checkbox input[type=checkbox]:checked+label::after, .checkbox input[type=radio]:checked+label::after {
+    color: #fff;
+}
+
+.radio input[type=radio]:checked+label::before {
+    border-color: $brand-primary;
+}
+
+.radio input[type=radio]:checked+label::after {
+    background-color: $brand-primary;
+}
+
+.text-danger.asterisk {
+    color: $brand-primary !important;
+}
+
+
+body .bg-light {
+    background-color: $brand-primary !important;
+    .navbar-brand {
+        color: black;
+        font-weight: bold;
+    }
+    a, a:hover, a:active {
+      color: black;
+      text-decoration: underline;
+    }
+}
+
+
+
+#navigator-container .btn {
+  border-radius: 17.25px !important;
+  font-family: $font-family-sans-serif !important;
+  font-size: 14px !important;
+
+  &-lg {
+    border-radius: 43px !important;
+  }
+
+  &-sm {
+    border-radius: 13.5px !important;
+    font-size: 11px !important;
+  }
+
+  &-secondary,
+  &-secondary:hover,
+  &-warning,
+  &-warning:hover {
+    color: $white !important;
+  }
+}
+
+
+.progress-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: black !important;
+    background-color: $brand-primary !important;
+}
+.progress-bar {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem;
+}
+
+.progress-bar {
+    -webkit-animation: progress-bar-stripes 1s linear infinite;
+    animation: progress-bar-stripes 1s linear infinite;
+}
+
+#topContainer {
+  background: transparent;
 }

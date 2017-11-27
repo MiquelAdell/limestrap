@@ -1,42 +1,44 @@
-<!-- startpage.pstl -->
-<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<title>{SURVEYNAME}</title>
-<meta name="generator" content="LimeSurvey http://www.limesurvey.org" />
+    <!-- startpage.pstl -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{SURVEYNAME}</title>
+    <meta name="generator" content="LimeSurvey http://www.limesurvey.org" />
 
-<!-- The following line includes jquery-ui.css or jquery-ui-custom.css from template dir, template.css and needed specific css file for survey -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-{TEMPLATECSS}
+    <!-- The following line includes jquery-ui.css or jquery-ui-custom.css from template dir, template.css and needed specific css file for survey -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    {TEMPLATECSS}
 
-<!-- The following line includes jquery.js, jquery-ui.js, survey_runtime.js , template.js and needed specific js file for survey -->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-{TEMPLATEJS}
-<link rel="shortcut icon" href="{TEMPLATEURL}favicon.ico" />
-{GOOGLE_ANALYTICS_JAVASCRIPT}
+    <!-- The following line includes jquery.js, jquery-ui.js, survey_runtime.js , template.js and needed specific js file for survey -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    {TEMPLATEJS}
+    <link rel="shortcut icon" href="{TEMPLATEURL}favicon.ico" />
+    {GOOGLE_ANALYTICS_JAVASCRIPT}
 </head>
 <body class="default lang-{SURVEYLANGUAGE} {SURVEYFORMAT}">
 
     <!-- Fixed navbar -->
 
     <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="/">{SURVEYNAME}</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="nav navbar-nav ml-auto">
-              {SAVE_LINKS}
-              {CLEARALL_LINKS}
-              {QUESTION_INDEX_MENU}
-          </ul>
+        <div class="container">
 
+            <div class="navbar-brand">{SURVEYNAME}</div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                {SAVE_LINKS}
+                {CLEARALL_LINKS}
+                {QUESTION_INDEX_MENU}
+                </ul>
+            </div>
         </div>
-      </div>
+
     </div>
 
 
@@ -52,9 +54,9 @@
 
         <div class="row" id="main-row">
 
-            <div class='col-xs-12' id="yii-flash-message">
-                {FLASHMESSAGE}
-            </div>
+        <div class='col-xs-12' id="yii-flash-message">
+            {FLASHMESSAGE}
+        </div>
 
-            <div class="col-sm-12 col-centered" id="main-col">
-<!-- end of startpage.pstl -->
+        <div class="col-sm-12 col-centered" id="main-col">
+        <!-- end of startpage.pstl -->
