@@ -28,7 +28,7 @@ var config = {
 	srcDir: './source',
 
 	browserSyncOptions: {
-		proxy: "http://limesurvey.dev/limestrap/",
+		proxy: "http://limesurvey.test/limestrap/",
 		notify: true
 	}
 };
