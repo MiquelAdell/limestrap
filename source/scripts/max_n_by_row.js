@@ -1,6 +1,6 @@
 jQuery( document ).ready(function( $ ) {
-    if($('#question11992').length){
-        $('#question11992').find(':checkbox').change(function() {
+    if($('#question12006').length){
+        $('#question12006').find(':checkbox').change(function() {
             if($(this).prop('checked') === true) {
                 var tr = $(this).closest('tr');
                 if(tr.find(':checked').length > 2){
