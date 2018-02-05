@@ -121,6 +121,2804 @@ setJsVar();
 
 
 
+<div id="question12346" class="numeric-multi  missing col-xs-12">
+
+        <!-- Question title -->
+        <div class="row question-wrapper">
+            <div class="col-sm-12 questiontext">
+                <h4 class="qnumcode">
+                <span class="text-danger asterix"></span> b01  Valora del 0 al 10 els següents ítems sobre la trajectòria de la Fundació en els últims 5 anys. Tingues en compte que 0 vol dir que no s’ha realitzat o s’ha realitzat de forma deficitària i que 10 vol dir que s’ha realitzat de la millor manera possible.
+                </h4>
+            </div>
+        </div>
+
+        <!-- Question help -->
+        <div class="row question-wrapper">
+            <div class="col-sm-12 questionhelpcontainer">
+
+            </div>
+        </div>
+
+        <!-- Question man message -->
+        <div class="row question-wrapper">
+            <div class="col-sm-12 questionmancontainer ">
+
+            </div>
+        </div>
+
+        <!-- Question valid message -->
+        <div class="row question-wrapper">
+            <div class="col-sm-12 questionvalidcontainer">
+                <div class="text-info questionhelp" role="alert" id="vmsg_12346">
+    <div id="vmsg_12346_value_range" class="em_value_range emtip good">
+
+    <span class="fa fa-exclamation-circle" aria-hidden="true"></span>
+    Cada resposta ha de ser entre 0 i 10</div>
+<div id="vmsg_12346_value_integer" class="em_value_integer emtip good">
+
+    <span class="fa fa-exclamation-circle" aria-hidden="true"></span>
+    Només es poden introduir valors enters en aquests camps.</div>
+</div>
+
+            </div>
+        </div>
+
+        <!-- Question file valid message -->
+        <div class="row question-wrapper">
+            <div class="col-sm-12 questionfilevalidcontainer">
+
+            </div>
+        </div>
+
+        <!-- Answer -->
+        <div class="row question-wrapper">
+            <div class="col-sm-12 answer">
+                <!-- Multiple Numerical -->
+
+<!-- answer -->
+<div class="subquestion-list questions-list text-list slider-list">
+
+
+<div id="javatbd489893X408X12346SQ001" class="question-item answer-item numeric-item  text-item  numberonly withslider integeronly col-sm-12">
+
+    <div class="form-group row">
+                    <label class="control-label col-xs-12 numeric-label" for="answer489893X408X12346SQ001">
+                Fer respectar els drets de les persones amb discapacitat intel·lectual            </label>
+                <div>
+
+        <div class="slider-container row slider-untouched">
+            <div class="col-xs-12 col-sm-10">
+
+                        <!-- Different col size depending on right|left -->
+                        <!-- TODO: Move PHP to qanda -->
+                                                    <div class="col-xs-12 col-sm-12">
+
+                            <div class="slider slider-horizontal" id=""><div class="slider-track"><div class="slider-track-low" style="left: 0px; width: 0%;"></div><div class="slider-selection" style="left: 0%; width: 0%;"></div><div class="slider-track-high" style="right: 0px; width: 100%;"></div></div><div class="tooltip tooltip-main top in" role="presentation" style="left: 0%; margin-left: -11.5px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">0</div></div><div class="tooltip tooltip-min top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="tooltip tooltip-max bottom" role="presentation" style="top: 18px; display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="slider-handle min-slider-handle round" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div><div class="slider-handle max-slider-handle round hide" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div></div><input class="text form-control pull-left " type="text" name="slider_489893X408X12346SQ001" id="slider_answer489893X408X12346SQ001" value="0" maxlength="25" data-slider-value="null" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-orientation="horizontal" data-slider-handle="round" data-slider-tooltip="always" data-slider-reset="1" data-slider-prefix="" data-slider-suffix="" data-separator="," data-value="0" style="display: none;">
+
+                                                            <div class="pull-left ">
+                                    <span class="help-block">0</span>
+                                </div>
+
+                                                            <div class="pull-right ">
+                                    <span class="help-block">10</span>
+                                </div>
+
+                        </div>
+
+                    </div>
+                                            <div class="col-xs-2">
+                            <div id="answer489893X408X12346SQ001_resetslider" class="pull-left btn btn-default">
+                                <span class="fa fa-times slider-reset" aria-hidden="true"></span>&nbsp;Restaurar                            </div>
+                        </div>
+
+                </div>
+
+
+        </div>
+        <input type="hidden" name="489893X408X12346SQ001" onchange="fixnum_checkconditions(this.value, this.name, this.type)" id="answer489893X408X12346SQ001" value="" class="em_sq_validation good">
+    </div> <!-- form group -->
+</div>
+
+    <div>
+    <style scoped="">
+    /**
+    * Slider custom handle
+    */
+    .slider-handle.custom
+    {
+        background: transparent none; /* You can customize the handle and set a background image */
+    }
+    .slider-handle.custom::before
+    {
+        line-height: 20px;
+        font-size: 20px;
+        font-family: FontAwesome;
+        content: '\f1ae';  /*unicode character ;*/
+    }
+    </style>
+    </div>
+    <script type="text/javascript">
+            // Most of this javascript is here to handle the fact that bootstrapSlider need numerical value in the input
+            // It can't accept "NULL" nor anyother thousand separator than "." (else it become a string)
+            // See : https://github.com/LimeSurvey/LimeSurvey/blob/master/scripts/bootstrap-slider.js#l1453-l1461
+            // If the bootstrapSlider were updated, most of this javascript would not be necessary.
+            $(document).ready(function(){
+                // Set of the needed informations for the slider
+                var myfname = '489893X408X12346SQ001';
+                var $inputEl = $('#slider_answer' + myfname);
+                var $resultEl = $('#answer' + myfname);
+                var $prefix = $inputEl.data('slider-prefix');
+                var $suffix = $inputEl.data('slider-suffix');
+                var $separator = $inputEl.data('separator');
+                var regExpTest = new RegExp(/^-?[0-9]+(.|,)?[0-9]*$/);
+                // We start the slider, and provide it the formated value with prefix and suffix for its tooltip
+                // Use closure for namespace, so we can use theSlider variable for all sliders.
+                (function () {
+                    var theSlider = $inputEl.bootstrapSlider({
+                        value : null,
+                        formatter: function (value) {
+                            var displayValue = "";
+                            if(regExpTest.test(value.toString())){
+                                displayValue = value.toString().replace(/\./,$separator);
+                            }
+                            return $prefix + displayValue + $suffix;
+                        },
+                    });
+
+                    // When user change the value of the slider :
+                    // we need to show the tooltip (if it was hidden)
+                    // and to update the value of the input element with correct format
+                    theSlider.on('slideStart', function(){
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-untouched').removeClass('slider-reset').addClass('slider-touched');
+                        $('#javatbd' + myfname).find('div.tooltip').show(); // Show the tooltip
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $resultEl.val(displayValue).trigger('change'); // We parse it to the element
+                    });
+
+                    theSlider.on('slideStop', function() {
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $inputEl.trigger('onkeyup');
+                        $resultEl.val(displayValue).trigger('change');
+                        //LEMrel12346() // We call the EM
+                        //console.log('$resultEl: ', $resultEl.val());
+                    });
+
+                    // Click the reset button
+                    $('#answer' + '489893X408X12346SQ001' + '_resetslider').on('click', function() {
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-touched').addClass('slider-reset');
+                        $('#javatbd' + myfname).find('div.tooltip').hide();
+
+                        // Position slider button at beginning
+                        theSlider.bootstrapSlider('setValue', null);
+
+                        // Set value to null
+                        $inputEl.attr('value', '').trigger("keyup");
+                        $resultEl.val('').trigger('change');
+                        //LEMrel12346() // We call the EM
+                    });
+
+                    // On form submission, if user action is still on,
+                    // we must force the value of the input to ''
+                    // and force the thousand separator (this bug still affect 2.06)
+                    $("form").submit(function (e) {
+                        $('#javatbd489893X408X12346SQ001 slider').hide(),
+                        $inputEl.bootstrapSlider('destroy');
+                        return true;
+                    });
+                    $("#vmsg_12346_default").text('Fes clic i arrossega els selectors lliscants per introduir la resposta.');
+                })();
+            });
+    </script>
+<!-- end of answer_row -->
+
+
+<div id="javatbd489893X408X12346SQ003" class="question-item answer-item numeric-item  text-item  numberonly withslider integeronly integeronly integeronly col-sm-12">
+
+    <div class="form-group row">
+                    <label class="control-label col-xs-12 numeric-label" for="answer489893X408X12346SQ003">
+                Reclamar i afavorir la participació activa a la societat de les persones amb discapacitat intel·lectual            </label>
+                <div>
+
+        <div class="slider-container row slider-untouched">
+            <div class="col-xs-12 col-sm-10">
+
+                        <!-- Different col size depending on right|left -->
+                        <!-- TODO: Move PHP to qanda -->
+                                                    <div class="col-xs-12 col-sm-12">
+
+                            <div class="slider slider-horizontal" id=""><div class="slider-track"><div class="slider-track-low" style="left: 0px; width: 0%;"></div><div class="slider-selection" style="left: 0%; width: 0%;"></div><div class="slider-track-high" style="right: 0px; width: 100%;"></div></div><div class="tooltip tooltip-main top in" role="presentation" style="left: 0%; margin-left: -11.5px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">0</div></div><div class="tooltip tooltip-min top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="tooltip tooltip-max bottom" role="presentation" style="top: 18px; display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="slider-handle min-slider-handle round" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div><div class="slider-handle max-slider-handle round hide" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div></div><input class="text form-control pull-left " type="text" name="slider_489893X408X12346SQ003" id="slider_answer489893X408X12346SQ003" value="0" maxlength="25" data-slider-value="null" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-orientation="horizontal" data-slider-handle="round" data-slider-tooltip="always" data-slider-reset="1" data-slider-prefix="" data-slider-suffix="" data-separator="," data-value="0" style="display: none;">
+
+                                                            <div class="pull-left ">
+                                    <span class="help-block">0</span>
+                                </div>
+
+                                                            <div class="pull-right ">
+                                    <span class="help-block">10</span>
+                                </div>
+
+                        </div>
+
+                    </div>
+                                            <div class="col-xs-2">
+                            <div id="answer489893X408X12346SQ003_resetslider" class="pull-left btn btn-default">
+                                <span class="fa fa-times slider-reset" aria-hidden="true"></span>&nbsp;Restaurar                            </div>
+                        </div>
+
+                </div>
+
+
+        </div>
+        <input type="hidden" name="489893X408X12346SQ003" onchange="fixnum_checkconditions(this.value, this.name, this.type)" id="answer489893X408X12346SQ003" value="" class="em_sq_validation good">
+    </div> <!-- form group -->
+</div>
+
+    <div>
+    <style scoped="">
+    /**
+    * Slider custom handle
+    */
+    .slider-handle.custom
+    {
+        background: transparent none; /* You can customize the handle and set a background image */
+    }
+    .slider-handle.custom::before
+    {
+        line-height: 20px;
+        font-size: 20px;
+        font-family: FontAwesome;
+        content: '\f1ae';  /*unicode character ;*/
+    }
+    </style>
+    </div>
+    <script type="text/javascript">
+            // Most of this javascript is here to handle the fact that bootstrapSlider need numerical value in the input
+            // It can't accept "NULL" nor anyother thousand separator than "." (else it become a string)
+            // See : https://github.com/LimeSurvey/LimeSurvey/blob/master/scripts/bootstrap-slider.js#l1453-l1461
+            // If the bootstrapSlider were updated, most of this javascript would not be necessary.
+            $(document).ready(function(){
+                // Set of the needed informations for the slider
+                var myfname = '489893X408X12346SQ003';
+                var $inputEl = $('#slider_answer' + myfname);
+                var $resultEl = $('#answer' + myfname);
+                var $prefix = $inputEl.data('slider-prefix');
+                var $suffix = $inputEl.data('slider-suffix');
+                var $separator = $inputEl.data('separator');
+                var regExpTest = new RegExp(/^-?[0-9]+(.|,)?[0-9]*$/);
+                // We start the slider, and provide it the formated value with prefix and suffix for its tooltip
+                // Use closure for namespace, so we can use theSlider variable for all sliders.
+                (function () {
+                    var theSlider = $inputEl.bootstrapSlider({
+                        value : null,
+                        formatter: function (value) {
+                            var displayValue = "";
+                            if(regExpTest.test(value.toString())){
+                                displayValue = value.toString().replace(/\./,$separator);
+                            }
+                            return $prefix + displayValue + $suffix;
+                        },
+                    });
+
+                    // When user change the value of the slider :
+                    // we need to show the tooltip (if it was hidden)
+                    // and to update the value of the input element with correct format
+                    theSlider.on('slideStart', function(){
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-untouched').removeClass('slider-reset').addClass('slider-touched');
+                        $('#javatbd' + myfname).find('div.tooltip').show(); // Show the tooltip
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $resultEl.val(displayValue).trigger('change'); // We parse it to the element
+                    });
+
+                    theSlider.on('slideStop', function() {
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $inputEl.trigger('onkeyup');
+                        $resultEl.val(displayValue).trigger('change');
+                        //LEMrel12346() // We call the EM
+                        //console.log('$resultEl: ', $resultEl.val());
+                    });
+
+                    // Click the reset button
+                    $('#answer' + '489893X408X12346SQ003' + '_resetslider').on('click', function() {
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-touched').addClass('slider-reset');
+                        $('#javatbd' + myfname).find('div.tooltip').hide();
+
+                        // Position slider button at beginning
+                        theSlider.bootstrapSlider('setValue', null);
+
+                        // Set value to null
+                        $inputEl.attr('value', '').trigger("keyup");
+                        $resultEl.val('').trigger('change');
+                        //LEMrel12346() // We call the EM
+                    });
+
+                    // On form submission, if user action is still on,
+                    // we must force the value of the input to ''
+                    // and force the thousand separator (this bug still affect 2.06)
+                    $("form").submit(function (e) {
+                        $('#javatbd489893X408X12346SQ003 slider').hide(),
+                        $inputEl.bootstrapSlider('destroy');
+                        return true;
+                    });
+                    $("#vmsg_12346_default").text('Fes clic i arrossega els selectors lliscants per introduir la resposta.');
+                })();
+            });
+    </script>
+<!-- end of answer_row -->
+
+<div id="javatbd489893X408X12346SQ004" class="question-item answer-item numeric-item  text-item  numberonly withslider integeronly integeronly integeronly integeronly col-sm-12">
+
+    <div class="form-group row">
+                    <label class="control-label col-xs-12 numeric-label" for="answer489893X408X12346SQ004">
+                Acompanyar les persones amb discapacitat intel·lectual en el seu procés vital d’adaptació, creixement i inclusió social            </label>
+                <div>
+
+        <div class="slider-container row slider-untouched">
+            <div class="col-xs-12 col-sm-10">
+
+                        <!-- Different col size depending on right|left -->
+                        <!-- TODO: Move PHP to qanda -->
+                                                    <div class="col-xs-12 col-sm-12">
+
+                            <div class="slider slider-horizontal" id=""><div class="slider-track"><div class="slider-track-low" style="left: 0px; width: 0%;"></div><div class="slider-selection" style="left: 0%; width: 0%;"></div><div class="slider-track-high" style="right: 0px; width: 100%;"></div></div><div class="tooltip tooltip-main top in" role="presentation" style="left: 0%; margin-left: -11.5px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">0</div></div><div class="tooltip tooltip-min top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="tooltip tooltip-max bottom" role="presentation" style="top: 18px; display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="slider-handle min-slider-handle round" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div><div class="slider-handle max-slider-handle round hide" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div></div><input class="text form-control pull-left " type="text" name="slider_489893X408X12346SQ004" id="slider_answer489893X408X12346SQ004" value="0" maxlength="25" data-slider-value="null" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-orientation="horizontal" data-slider-handle="round" data-slider-tooltip="always" data-slider-reset="1" data-slider-prefix="" data-slider-suffix="" data-separator="," data-value="0" style="display: none;">
+
+                                                            <div class="pull-left ">
+                                    <span class="help-block">0</span>
+                                </div>
+
+                                                            <div class="pull-right ">
+                                    <span class="help-block">10</span>
+                                </div>
+
+                        </div>
+
+                    </div>
+                                            <div class="col-xs-2">
+                            <div id="answer489893X408X12346SQ004_resetslider" class="pull-left btn btn-default">
+                                <span class="fa fa-times slider-reset" aria-hidden="true"></span>&nbsp;Restaurar                            </div>
+                        </div>
+
+                </div>
+
+
+        </div>
+        <input type="hidden" name="489893X408X12346SQ004" onchange="fixnum_checkconditions(this.value, this.name, this.type)" id="answer489893X408X12346SQ004" value="" class="em_sq_validation good">
+    </div> <!-- form group -->
+</div>
+
+    <div>
+    <style scoped="">
+    /**
+    * Slider custom handle
+    */
+    .slider-handle.custom
+    {
+        background: transparent none; /* You can customize the handle and set a background image */
+    }
+    .slider-handle.custom::before
+    {
+        line-height: 20px;
+        font-size: 20px;
+        font-family: FontAwesome;
+        content: '\f1ae';  /*unicode character ;*/
+    }
+    </style>
+    </div>
+    <script type="text/javascript">
+            // Most of this javascript is here to handle the fact that bootstrapSlider need numerical value in the input
+            // It can't accept "NULL" nor anyother thousand separator than "." (else it become a string)
+            // See : https://github.com/LimeSurvey/LimeSurvey/blob/master/scripts/bootstrap-slider.js#l1453-l1461
+            // If the bootstrapSlider were updated, most of this javascript would not be necessary.
+            $(document).ready(function(){
+                // Set of the needed informations for the slider
+                var myfname = '489893X408X12346SQ004';
+                var $inputEl = $('#slider_answer' + myfname);
+                var $resultEl = $('#answer' + myfname);
+                var $prefix = $inputEl.data('slider-prefix');
+                var $suffix = $inputEl.data('slider-suffix');
+                var $separator = $inputEl.data('separator');
+                var regExpTest = new RegExp(/^-?[0-9]+(.|,)?[0-9]*$/);
+                // We start the slider, and provide it the formated value with prefix and suffix for its tooltip
+                // Use closure for namespace, so we can use theSlider variable for all sliders.
+                (function () {
+                    var theSlider = $inputEl.bootstrapSlider({
+                        value : null,
+                        formatter: function (value) {
+                            var displayValue = "";
+                            if(regExpTest.test(value.toString())){
+                                displayValue = value.toString().replace(/\./,$separator);
+                            }
+                            return $prefix + displayValue + $suffix;
+                        },
+                    });
+
+                    // When user change the value of the slider :
+                    // we need to show the tooltip (if it was hidden)
+                    // and to update the value of the input element with correct format
+                    theSlider.on('slideStart', function(){
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-untouched').removeClass('slider-reset').addClass('slider-touched');
+                        $('#javatbd' + myfname).find('div.tooltip').show(); // Show the tooltip
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $resultEl.val(displayValue).trigger('change'); // We parse it to the element
+                    });
+
+                    theSlider.on('slideStop', function() {
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $inputEl.trigger('onkeyup');
+                        $resultEl.val(displayValue).trigger('change');
+                        //LEMrel12346() // We call the EM
+                        //console.log('$resultEl: ', $resultEl.val());
+                    });
+
+                    // Click the reset button
+                    $('#answer' + '489893X408X12346SQ004' + '_resetslider').on('click', function() {
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-touched').addClass('slider-reset');
+                        $('#javatbd' + myfname).find('div.tooltip').hide();
+
+                        // Position slider button at beginning
+                        theSlider.bootstrapSlider('setValue', null);
+
+                        // Set value to null
+                        $inputEl.attr('value', '').trigger("keyup");
+                        $resultEl.val('').trigger('change');
+                        //LEMrel12346() // We call the EM
+                    });
+
+                    // On form submission, if user action is still on,
+                    // we must force the value of the input to ''
+                    // and force the thousand separator (this bug still affect 2.06)
+                    $("form").submit(function (e) {
+                        $('#javatbd489893X408X12346SQ004 slider').hide(),
+                        $inputEl.bootstrapSlider('destroy');
+                        return true;
+                    });
+                    $("#vmsg_12346_default").text('Fes clic i arrossega els selectors lliscants per introduir la resposta.');
+                })();
+            });
+    </script>
+<!-- end of answer_row -->
+
+<div id="javatbd489893X408X12346SQ005" class="question-item answer-item numeric-item  text-item  numberonly withslider integeronly integeronly integeronly integeronly integeronly col-sm-12">
+
+    <div class="form-group row">
+                    <label class="control-label col-xs-12 numeric-label" for="answer489893X408X12346SQ005">
+                Millora de qualitat de vida de les persones amb discapacitat intel·lectual            </label>
+                <div>
+
+        <div class="slider-container row slider-untouched">
+            <div class="col-xs-12 col-sm-10">
+
+                        <!-- Different col size depending on right|left -->
+                        <!-- TODO: Move PHP to qanda -->
+                                                    <div class="col-xs-12 col-sm-12">
+
+                            <div class="slider slider-horizontal" id=""><div class="slider-track"><div class="slider-track-low" style="left: 0px; width: 0%;"></div><div class="slider-selection" style="left: 0%; width: 0%;"></div><div class="slider-track-high" style="right: 0px; width: 100%;"></div></div><div class="tooltip tooltip-main top in" role="presentation" style="left: 0%; margin-left: -11.5px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">0</div></div><div class="tooltip tooltip-min top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="tooltip tooltip-max bottom" role="presentation" style="top: 18px; display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="slider-handle min-slider-handle round" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div><div class="slider-handle max-slider-handle round hide" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div></div><input class="text form-control pull-left " type="text" name="slider_489893X408X12346SQ005" id="slider_answer489893X408X12346SQ005" value="0" maxlength="25" data-slider-value="null" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-orientation="horizontal" data-slider-handle="round" data-slider-tooltip="always" data-slider-reset="1" data-slider-prefix="" data-slider-suffix="" data-separator="," data-value="0" style="display: none;">
+
+                                                            <div class="pull-left ">
+                                    <span class="help-block">0</span>
+                                </div>
+
+                                                            <div class="pull-right ">
+                                    <span class="help-block">10</span>
+                                </div>
+
+                        </div>
+
+                    </div>
+                                            <div class="col-xs-2">
+                            <div id="answer489893X408X12346SQ005_resetslider" class="pull-left btn btn-default">
+                                <span class="fa fa-times slider-reset" aria-hidden="true"></span>&nbsp;Restaurar                            </div>
+                        </div>
+
+                </div>
+
+
+        </div>
+        <input type="hidden" name="489893X408X12346SQ005" onchange="fixnum_checkconditions(this.value, this.name, this.type)" id="answer489893X408X12346SQ005" value="" class="em_sq_validation good">
+    </div> <!-- form group -->
+</div>
+
+    <div>
+    <style scoped="">
+    /**
+    * Slider custom handle
+    */
+    .slider-handle.custom
+    {
+        background: transparent none; /* You can customize the handle and set a background image */
+    }
+    .slider-handle.custom::before
+    {
+        line-height: 20px;
+        font-size: 20px;
+        font-family: FontAwesome;
+        content: '\f1ae';  /*unicode character ;*/
+    }
+    </style>
+    </div>
+    <script type="text/javascript">
+            // Most of this javascript is here to handle the fact that bootstrapSlider need numerical value in the input
+            // It can't accept "NULL" nor anyother thousand separator than "." (else it become a string)
+            // See : https://github.com/LimeSurvey/LimeSurvey/blob/master/scripts/bootstrap-slider.js#l1453-l1461
+            // If the bootstrapSlider were updated, most of this javascript would not be necessary.
+            $(document).ready(function(){
+                // Set of the needed informations for the slider
+                var myfname = '489893X408X12346SQ005';
+                var $inputEl = $('#slider_answer' + myfname);
+                var $resultEl = $('#answer' + myfname);
+                var $prefix = $inputEl.data('slider-prefix');
+                var $suffix = $inputEl.data('slider-suffix');
+                var $separator = $inputEl.data('separator');
+                var regExpTest = new RegExp(/^-?[0-9]+(.|,)?[0-9]*$/);
+                // We start the slider, and provide it the formated value with prefix and suffix for its tooltip
+                // Use closure for namespace, so we can use theSlider variable for all sliders.
+                (function () {
+                    var theSlider = $inputEl.bootstrapSlider({
+                        value : null,
+                        formatter: function (value) {
+                            var displayValue = "";
+                            if(regExpTest.test(value.toString())){
+                                displayValue = value.toString().replace(/\./,$separator);
+                            }
+                            return $prefix + displayValue + $suffix;
+                        },
+                    });
+
+                    // When user change the value of the slider :
+                    // we need to show the tooltip (if it was hidden)
+                    // and to update the value of the input element with correct format
+                    theSlider.on('slideStart', function(){
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-untouched').removeClass('slider-reset').addClass('slider-touched');
+                        $('#javatbd' + myfname).find('div.tooltip').show(); // Show the tooltip
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $resultEl.val(displayValue).trigger('change'); // We parse it to the element
+                    });
+
+                    theSlider.on('slideStop', function() {
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $inputEl.trigger('onkeyup');
+                        $resultEl.val(displayValue).trigger('change');
+                        //LEMrel12346() // We call the EM
+                        //console.log('$resultEl: ', $resultEl.val());
+                    });
+
+                    // Click the reset button
+                    $('#answer' + '489893X408X12346SQ005' + '_resetslider').on('click', function() {
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-touched').addClass('slider-reset');
+                        $('#javatbd' + myfname).find('div.tooltip').hide();
+
+                        // Position slider button at beginning
+                        theSlider.bootstrapSlider('setValue', null);
+
+                        // Set value to null
+                        $inputEl.attr('value', '').trigger("keyup");
+                        $resultEl.val('').trigger('change');
+                        //LEMrel12346() // We call the EM
+                    });
+
+                    // On form submission, if user action is still on,
+                    // we must force the value of the input to ''
+                    // and force the thousand separator (this bug still affect 2.06)
+                    $("form").submit(function (e) {
+                        $('#javatbd489893X408X12346SQ005 slider').hide(),
+                        $inputEl.bootstrapSlider('destroy');
+                        return true;
+                    });
+                    $("#vmsg_12346_default").text('Fes clic i arrossega els selectors lliscants per introduir la resposta.');
+                })();
+            });
+    </script>
+<!-- end of answer_row -->
+
+<div id="javatbd489893X408X12346SQ006" class="question-item answer-item numeric-item  text-item  numberonly withslider integeronly integeronly integeronly integeronly integeronly integeronly col-sm-12">
+
+    <div class="form-group row">
+                    <label class="control-label col-xs-12 numeric-label" for="answer489893X408X12346SQ006">
+                Generar oportunitats de treball per a les persones amb discapacitat intel·lectual            </label>
+                <div>
+
+        <div class="slider-container row slider-untouched">
+            <div class="col-xs-12 col-sm-10">
+
+                        <!-- Different col size depending on right|left -->
+                        <!-- TODO: Move PHP to qanda -->
+                                                    <div class="col-xs-12 col-sm-12">
+
+                            <div class="slider slider-horizontal" id=""><div class="slider-track"><div class="slider-track-low" style="left: 0px; width: 0%;"></div><div class="slider-selection" style="left: 0%; width: 0%;"></div><div class="slider-track-high" style="right: 0px; width: 100%;"></div></div><div class="tooltip tooltip-main top in" role="presentation" style="left: 0%; margin-left: -11.5px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">0</div></div><div class="tooltip tooltip-min top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="tooltip tooltip-max bottom" role="presentation" style="top: 18px; display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="slider-handle min-slider-handle round" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div><div class="slider-handle max-slider-handle round hide" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div></div><input class="text form-control pull-left " type="text" name="slider_489893X408X12346SQ006" id="slider_answer489893X408X12346SQ006" value="0" maxlength="25" data-slider-value="null" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-orientation="horizontal" data-slider-handle="round" data-slider-tooltip="always" data-slider-reset="1" data-slider-prefix="" data-slider-suffix="" data-separator="," data-value="0" style="display: none;">
+
+                                                            <div class="pull-left ">
+                                    <span class="help-block">0</span>
+                                </div>
+
+                                                            <div class="pull-right ">
+                                    <span class="help-block">10</span>
+                                </div>
+
+                        </div>
+
+                    </div>
+                                            <div class="col-xs-2">
+                            <div id="answer489893X408X12346SQ006_resetslider" class="pull-left btn btn-default">
+                                <span class="fa fa-times slider-reset" aria-hidden="true"></span>&nbsp;Restaurar                            </div>
+                        </div>
+
+                </div>
+
+
+        </div>
+        <input type="hidden" name="489893X408X12346SQ006" onchange="fixnum_checkconditions(this.value, this.name, this.type)" id="answer489893X408X12346SQ006" value="" class="em_sq_validation good">
+    </div> <!-- form group -->
+</div>
+
+    <div>
+    <style scoped="">
+    /**
+    * Slider custom handle
+    */
+    .slider-handle.custom
+    {
+        background: transparent none; /* You can customize the handle and set a background image */
+    }
+    .slider-handle.custom::before
+    {
+        line-height: 20px;
+        font-size: 20px;
+        font-family: FontAwesome;
+        content: '\f1ae';  /*unicode character ;*/
+    }
+    </style>
+    </div>
+    <script type="text/javascript">
+            // Most of this javascript is here to handle the fact that bootstrapSlider need numerical value in the input
+            // It can't accept "NULL" nor anyother thousand separator than "." (else it become a string)
+            // See : https://github.com/LimeSurvey/LimeSurvey/blob/master/scripts/bootstrap-slider.js#l1453-l1461
+            // If the bootstrapSlider were updated, most of this javascript would not be necessary.
+            $(document).ready(function(){
+                // Set of the needed informations for the slider
+                var myfname = '489893X408X12346SQ006';
+                var $inputEl = $('#slider_answer' + myfname);
+                var $resultEl = $('#answer' + myfname);
+                var $prefix = $inputEl.data('slider-prefix');
+                var $suffix = $inputEl.data('slider-suffix');
+                var $separator = $inputEl.data('separator');
+                var regExpTest = new RegExp(/^-?[0-9]+(.|,)?[0-9]*$/);
+                // We start the slider, and provide it the formated value with prefix and suffix for its tooltip
+                // Use closure for namespace, so we can use theSlider variable for all sliders.
+                (function () {
+                    var theSlider = $inputEl.bootstrapSlider({
+                        value : null,
+                        formatter: function (value) {
+                            var displayValue = "";
+                            if(regExpTest.test(value.toString())){
+                                displayValue = value.toString().replace(/\./,$separator);
+                            }
+                            return $prefix + displayValue + $suffix;
+                        },
+                    });
+
+                    // When user change the value of the slider :
+                    // we need to show the tooltip (if it was hidden)
+                    // and to update the value of the input element with correct format
+                    theSlider.on('slideStart', function(){
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-untouched').removeClass('slider-reset').addClass('slider-touched');
+                        $('#javatbd' + myfname).find('div.tooltip').show(); // Show the tooltip
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $resultEl.val(displayValue).trigger('change'); // We parse it to the element
+                    });
+
+                    theSlider.on('slideStop', function() {
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $inputEl.trigger('onkeyup');
+                        $resultEl.val(displayValue).trigger('change');
+                        //LEMrel12346() // We call the EM
+                        //console.log('$resultEl: ', $resultEl.val());
+                    });
+
+                    // Click the reset button
+                    $('#answer' + '489893X408X12346SQ006' + '_resetslider').on('click', function() {
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-touched').addClass('slider-reset');
+                        $('#javatbd' + myfname).find('div.tooltip').hide();
+
+                        // Position slider button at beginning
+                        theSlider.bootstrapSlider('setValue', null);
+
+                        // Set value to null
+                        $inputEl.attr('value', '').trigger("keyup");
+                        $resultEl.val('').trigger('change');
+                        //LEMrel12346() // We call the EM
+                    });
+
+                    // On form submission, if user action is still on,
+                    // we must force the value of the input to ''
+                    // and force the thousand separator (this bug still affect 2.06)
+                    $("form").submit(function (e) {
+                        $('#javatbd489893X408X12346SQ006 slider').hide(),
+                        $inputEl.bootstrapSlider('destroy');
+                        return true;
+                    });
+                    $("#vmsg_12346_default").text('Fes clic i arrossega els selectors lliscants per introduir la resposta.');
+                })();
+            });
+    </script>
+<!-- end of answer_row -->
+
+<div id="javatbd489893X408X12346SQ007" class="question-item answer-item numeric-item  text-item  numberonly withslider integeronly integeronly integeronly integeronly integeronly integeronly integeronly col-sm-12">
+
+    <div class="form-group row">
+                    <label class="control-label col-xs-12 numeric-label" for="answer489893X408X12346SQ007">
+                Donar suport i atenció  a les famílies            </label>
+                <div>
+
+        <div class="slider-container row slider-untouched">
+            <div class="col-xs-12 col-sm-10">
+
+                        <!-- Different col size depending on right|left -->
+                        <!-- TODO: Move PHP to qanda -->
+                                                    <div class="col-xs-12 col-sm-12">
+
+                            <div class="slider slider-horizontal" id=""><div class="slider-track"><div class="slider-track-low" style="left: 0px; width: 0%;"></div><div class="slider-selection" style="left: 0%; width: 0%;"></div><div class="slider-track-high" style="right: 0px; width: 100%;"></div></div><div class="tooltip tooltip-main top in" role="presentation" style="left: 0%; margin-left: -11.5px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">0</div></div><div class="tooltip tooltip-min top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="tooltip tooltip-max bottom" role="presentation" style="top: 18px; display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="slider-handle min-slider-handle round" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div><div class="slider-handle max-slider-handle round hide" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div></div><input class="text form-control pull-left " type="text" name="slider_489893X408X12346SQ007" id="slider_answer489893X408X12346SQ007" value="0" maxlength="25" data-slider-value="null" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-orientation="horizontal" data-slider-handle="round" data-slider-tooltip="always" data-slider-reset="1" data-slider-prefix="" data-slider-suffix="" data-separator="," data-value="0" style="display: none;">
+
+                                                            <div class="pull-left ">
+                                    <span class="help-block">0</span>
+                                </div>
+
+                                                            <div class="pull-right ">
+                                    <span class="help-block">10</span>
+                                </div>
+
+                        </div>
+
+                    </div>
+                                            <div class="col-xs-2">
+                            <div id="answer489893X408X12346SQ007_resetslider" class="pull-left btn btn-default">
+                                <span class="fa fa-times slider-reset" aria-hidden="true"></span>&nbsp;Restaurar                            </div>
+                        </div>
+
+                </div>
+
+
+        </div>
+        <input type="hidden" name="489893X408X12346SQ007" onchange="fixnum_checkconditions(this.value, this.name, this.type)" id="answer489893X408X12346SQ007" value="" class="em_sq_validation good">
+    </div> <!-- form group -->
+</div>
+
+    <div>
+    <style scoped="">
+    /**
+    * Slider custom handle
+    */
+    .slider-handle.custom
+    {
+        background: transparent none; /* You can customize the handle and set a background image */
+    }
+    .slider-handle.custom::before
+    {
+        line-height: 20px;
+        font-size: 20px;
+        font-family: FontAwesome;
+        content: '\f1ae';  /*unicode character ;*/
+    }
+    </style>
+    </div>
+    <script type="text/javascript">
+            // Most of this javascript is here to handle the fact that bootstrapSlider need numerical value in the input
+            // It can't accept "NULL" nor anyother thousand separator than "." (else it become a string)
+            // See : https://github.com/LimeSurvey/LimeSurvey/blob/master/scripts/bootstrap-slider.js#l1453-l1461
+            // If the bootstrapSlider were updated, most of this javascript would not be necessary.
+            $(document).ready(function(){
+                // Set of the needed informations for the slider
+                var myfname = '489893X408X12346SQ007';
+                var $inputEl = $('#slider_answer' + myfname);
+                var $resultEl = $('#answer' + myfname);
+                var $prefix = $inputEl.data('slider-prefix');
+                var $suffix = $inputEl.data('slider-suffix');
+                var $separator = $inputEl.data('separator');
+                var regExpTest = new RegExp(/^-?[0-9]+(.|,)?[0-9]*$/);
+                // We start the slider, and provide it the formated value with prefix and suffix for its tooltip
+                // Use closure for namespace, so we can use theSlider variable for all sliders.
+                (function () {
+                    var theSlider = $inputEl.bootstrapSlider({
+                        value : null,
+                        formatter: function (value) {
+                            var displayValue = "";
+                            if(regExpTest.test(value.toString())){
+                                displayValue = value.toString().replace(/\./,$separator);
+                            }
+                            return $prefix + displayValue + $suffix;
+                        },
+                    });
+
+                    // When user change the value of the slider :
+                    // we need to show the tooltip (if it was hidden)
+                    // and to update the value of the input element with correct format
+                    theSlider.on('slideStart', function(){
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-untouched').removeClass('slider-reset').addClass('slider-touched');
+                        $('#javatbd' + myfname).find('div.tooltip').show(); // Show the tooltip
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $resultEl.val(displayValue).trigger('change'); // We parse it to the element
+                    });
+
+                    theSlider.on('slideStop', function() {
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $inputEl.trigger('onkeyup');
+                        $resultEl.val(displayValue).trigger('change');
+                        //LEMrel12346() // We call the EM
+                        //console.log('$resultEl: ', $resultEl.val());
+                    });
+
+                    // Click the reset button
+                    $('#answer' + '489893X408X12346SQ007' + '_resetslider').on('click', function() {
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-touched').addClass('slider-reset');
+                        $('#javatbd' + myfname).find('div.tooltip').hide();
+
+                        // Position slider button at beginning
+                        theSlider.bootstrapSlider('setValue', null);
+
+                        // Set value to null
+                        $inputEl.attr('value', '').trigger("keyup");
+                        $resultEl.val('').trigger('change');
+                        //LEMrel12346() // We call the EM
+                    });
+
+                    // On form submission, if user action is still on,
+                    // we must force the value of the input to ''
+                    // and force the thousand separator (this bug still affect 2.06)
+                    $("form").submit(function (e) {
+                        $('#javatbd489893X408X12346SQ007 slider').hide(),
+                        $inputEl.bootstrapSlider('destroy');
+                        return true;
+                    });
+                    $("#vmsg_12346_default").text('Fes clic i arrossega els selectors lliscants per introduir la resposta.');
+                })();
+            });
+    </script>
+<!-- end of answer_row -->
+
+<div id="javatbd489893X408X12346SQ008" class="question-item answer-item numeric-item  text-item  numberonly withslider integeronly integeronly integeronly integeronly integeronly integeronly integeronly integeronly col-sm-12">
+
+    <div class="form-group row">
+                    <label class="control-label col-xs-12 numeric-label" for="answer489893X408X12346SQ008">
+                Atenció a noves necessitats de l’entorn            </label>
+                <div>
+
+        <div class="slider-container row slider-untouched">
+            <div class="col-xs-12 col-sm-10">
+
+                        <!-- Different col size depending on right|left -->
+                        <!-- TODO: Move PHP to qanda -->
+                                                    <div class="col-xs-12 col-sm-12">
+
+                            <div class="slider slider-horizontal" id=""><div class="slider-track"><div class="slider-track-low" style="left: 0px; width: 0%;"></div><div class="slider-selection" style="left: 0%; width: 0%;"></div><div class="slider-track-high" style="right: 0px; width: 100%;"></div></div><div class="tooltip tooltip-main top in" role="presentation" style="left: 0%; margin-left: -11.5px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">0</div></div><div class="tooltip tooltip-min top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="tooltip tooltip-max bottom" role="presentation" style="top: 18px; display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="slider-handle min-slider-handle round" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div><div class="slider-handle max-slider-handle round hide" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div></div><input class="text form-control pull-left " type="text" name="slider_489893X408X12346SQ008" id="slider_answer489893X408X12346SQ008" value="0" maxlength="25" data-slider-value="null" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-orientation="horizontal" data-slider-handle="round" data-slider-tooltip="always" data-slider-reset="1" data-slider-prefix="" data-slider-suffix="" data-separator="," data-value="0" style="display: none;">
+
+                                                            <div class="pull-left ">
+                                    <span class="help-block">0</span>
+                                </div>
+
+                                                            <div class="pull-right ">
+                                    <span class="help-block">10</span>
+                                </div>
+
+                        </div>
+
+                    </div>
+                                            <div class="col-xs-2">
+                            <div id="answer489893X408X12346SQ008_resetslider" class="pull-left btn btn-default">
+                                <span class="fa fa-times slider-reset" aria-hidden="true"></span>&nbsp;Restaurar                            </div>
+                        </div>
+
+                </div>
+
+
+        </div>
+        <input type="hidden" name="489893X408X12346SQ008" onchange="fixnum_checkconditions(this.value, this.name, this.type)" id="answer489893X408X12346SQ008" value="" class="em_sq_validation good">
+    </div> <!-- form group -->
+</div>
+
+    <div>
+    <style scoped="">
+    /**
+    * Slider custom handle
+    */
+    .slider-handle.custom
+    {
+        background: transparent none; /* You can customize the handle and set a background image */
+    }
+    .slider-handle.custom::before
+    {
+        line-height: 20px;
+        font-size: 20px;
+        font-family: FontAwesome;
+        content: '\f1ae';  /*unicode character ;*/
+    }
+    </style>
+    </div>
+    <script type="text/javascript">
+            // Most of this javascript is here to handle the fact that bootstrapSlider need numerical value in the input
+            // It can't accept "NULL" nor anyother thousand separator than "." (else it become a string)
+            // See : https://github.com/LimeSurvey/LimeSurvey/blob/master/scripts/bootstrap-slider.js#l1453-l1461
+            // If the bootstrapSlider were updated, most of this javascript would not be necessary.
+            $(document).ready(function(){
+                // Set of the needed informations for the slider
+                var myfname = '489893X408X12346SQ008';
+                var $inputEl = $('#slider_answer' + myfname);
+                var $resultEl = $('#answer' + myfname);
+                var $prefix = $inputEl.data('slider-prefix');
+                var $suffix = $inputEl.data('slider-suffix');
+                var $separator = $inputEl.data('separator');
+                var regExpTest = new RegExp(/^-?[0-9]+(.|,)?[0-9]*$/);
+                // We start the slider, and provide it the formated value with prefix and suffix for its tooltip
+                // Use closure for namespace, so we can use theSlider variable for all sliders.
+                (function () {
+                    var theSlider = $inputEl.bootstrapSlider({
+                        value : null,
+                        formatter: function (value) {
+                            var displayValue = "";
+                            if(regExpTest.test(value.toString())){
+                                displayValue = value.toString().replace(/\./,$separator);
+                            }
+                            return $prefix + displayValue + $suffix;
+                        },
+                    });
+
+                    // When user change the value of the slider :
+                    // we need to show the tooltip (if it was hidden)
+                    // and to update the value of the input element with correct format
+                    theSlider.on('slideStart', function(){
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-untouched').removeClass('slider-reset').addClass('slider-touched');
+                        $('#javatbd' + myfname).find('div.tooltip').show(); // Show the tooltip
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $resultEl.val(displayValue).trigger('change'); // We parse it to the element
+                    });
+
+                    theSlider.on('slideStop', function() {
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $inputEl.trigger('onkeyup');
+                        $resultEl.val(displayValue).trigger('change');
+                        //LEMrel12346() // We call the EM
+                        //console.log('$resultEl: ', $resultEl.val());
+                    });
+
+                    // Click the reset button
+                    $('#answer' + '489893X408X12346SQ008' + '_resetslider').on('click', function() {
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-touched').addClass('slider-reset');
+                        $('#javatbd' + myfname).find('div.tooltip').hide();
+
+                        // Position slider button at beginning
+                        theSlider.bootstrapSlider('setValue', null);
+
+                        // Set value to null
+                        $inputEl.attr('value', '').trigger("keyup");
+                        $resultEl.val('').trigger('change');
+                        //LEMrel12346() // We call the EM
+                    });
+
+                    // On form submission, if user action is still on,
+                    // we must force the value of the input to ''
+                    // and force the thousand separator (this bug still affect 2.06)
+                    $("form").submit(function (e) {
+                        $('#javatbd489893X408X12346SQ008 slider').hide(),
+                        $inputEl.bootstrapSlider('destroy');
+                        return true;
+                    });
+                    $("#vmsg_12346_default").text('Fes clic i arrossega els selectors lliscants per introduir la resposta.');
+                })();
+            });
+    </script>
+<!-- end of answer_row -->
+
+<div id="javatbd489893X408X12346SQ009" class="question-item answer-item numeric-item  text-item  numberonly withslider integeronly integeronly integeronly integeronly integeronly integeronly integeronly integeronly integeronly col-sm-12">
+
+    <div class="form-group row">
+                    <label class="control-label col-xs-12 numeric-label" for="answer489893X408X12346SQ009">
+                Ser referents al territori            </label>
+                <div>
+
+        <div class="slider-container row slider-untouched">
+            <div class="col-xs-12 col-sm-10">
+
+                        <!-- Different col size depending on right|left -->
+                        <!-- TODO: Move PHP to qanda -->
+                                                    <div class="col-xs-12 col-sm-12">
+
+                            <div class="slider slider-horizontal" id=""><div class="slider-track"><div class="slider-track-low" style="left: 0px; width: 0%;"></div><div class="slider-selection" style="left: 0%; width: 0%;"></div><div class="slider-track-high" style="right: 0px; width: 100%;"></div></div><div class="tooltip tooltip-main top in" role="presentation" style="left: 0%; margin-left: -11.5px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">0</div></div><div class="tooltip tooltip-min top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="tooltip tooltip-max bottom" role="presentation" style="top: 18px; display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="slider-handle min-slider-handle round" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div><div class="slider-handle max-slider-handle round hide" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div></div><input class="text form-control pull-left " type="text" name="slider_489893X408X12346SQ009" id="slider_answer489893X408X12346SQ009" value="0" maxlength="25" data-slider-value="null" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-orientation="horizontal" data-slider-handle="round" data-slider-tooltip="always" data-slider-reset="1" data-slider-prefix="" data-slider-suffix="" data-separator="," data-value="0" style="display: none;">
+
+                                                            <div class="pull-left ">
+                                    <span class="help-block">0</span>
+                                </div>
+
+                                                            <div class="pull-right ">
+                                    <span class="help-block">10</span>
+                                </div>
+
+                        </div>
+
+                    </div>
+                                            <div class="col-xs-2">
+                            <div id="answer489893X408X12346SQ009_resetslider" class="pull-left btn btn-default">
+                                <span class="fa fa-times slider-reset" aria-hidden="true"></span>&nbsp;Restaurar                            </div>
+                        </div>
+
+                </div>
+
+
+        </div>
+        <input type="hidden" name="489893X408X12346SQ009" onchange="fixnum_checkconditions(this.value, this.name, this.type)" id="answer489893X408X12346SQ009" value="" class="em_sq_validation good">
+    </div> <!-- form group -->
+</div>
+
+    <div>
+    <style scoped="">
+    /**
+    * Slider custom handle
+    */
+    .slider-handle.custom
+    {
+        background: transparent none; /* You can customize the handle and set a background image */
+    }
+    .slider-handle.custom::before
+    {
+        line-height: 20px;
+        font-size: 20px;
+        font-family: FontAwesome;
+        content: '\f1ae';  /*unicode character ;*/
+    }
+    </style>
+    </div>
+    <script type="text/javascript">
+            // Most of this javascript is here to handle the fact that bootstrapSlider need numerical value in the input
+            // It can't accept "NULL" nor anyother thousand separator than "." (else it become a string)
+            // See : https://github.com/LimeSurvey/LimeSurvey/blob/master/scripts/bootstrap-slider.js#l1453-l1461
+            // If the bootstrapSlider were updated, most of this javascript would not be necessary.
+            $(document).ready(function(){
+                // Set of the needed informations for the slider
+                var myfname = '489893X408X12346SQ009';
+                var $inputEl = $('#slider_answer' + myfname);
+                var $resultEl = $('#answer' + myfname);
+                var $prefix = $inputEl.data('slider-prefix');
+                var $suffix = $inputEl.data('slider-suffix');
+                var $separator = $inputEl.data('separator');
+                var regExpTest = new RegExp(/^-?[0-9]+(.|,)?[0-9]*$/);
+                // We start the slider, and provide it the formated value with prefix and suffix for its tooltip
+                // Use closure for namespace, so we can use theSlider variable for all sliders.
+                (function () {
+                    var theSlider = $inputEl.bootstrapSlider({
+                        value : null,
+                        formatter: function (value) {
+                            var displayValue = "";
+                            if(regExpTest.test(value.toString())){
+                                displayValue = value.toString().replace(/\./,$separator);
+                            }
+                            return $prefix + displayValue + $suffix;
+                        },
+                    });
+
+                    // When user change the value of the slider :
+                    // we need to show the tooltip (if it was hidden)
+                    // and to update the value of the input element with correct format
+                    theSlider.on('slideStart', function(){
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-untouched').removeClass('slider-reset').addClass('slider-touched');
+                        $('#javatbd' + myfname).find('div.tooltip').show(); // Show the tooltip
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $resultEl.val(displayValue).trigger('change'); // We parse it to the element
+                    });
+
+                    theSlider.on('slideStop', function() {
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $inputEl.trigger('onkeyup');
+                        $resultEl.val(displayValue).trigger('change');
+                        //LEMrel12346() // We call the EM
+                        //console.log('$resultEl: ', $resultEl.val());
+                    });
+
+                    // Click the reset button
+                    $('#answer' + '489893X408X12346SQ009' + '_resetslider').on('click', function() {
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-touched').addClass('slider-reset');
+                        $('#javatbd' + myfname).find('div.tooltip').hide();
+
+                        // Position slider button at beginning
+                        theSlider.bootstrapSlider('setValue', null);
+
+                        // Set value to null
+                        $inputEl.attr('value', '').trigger("keyup");
+                        $resultEl.val('').trigger('change');
+                        //LEMrel12346() // We call the EM
+                    });
+
+                    // On form submission, if user action is still on,
+                    // we must force the value of the input to ''
+                    // and force the thousand separator (this bug still affect 2.06)
+                    $("form").submit(function (e) {
+                        $('#javatbd489893X408X12346SQ009 slider').hide(),
+                        $inputEl.bootstrapSlider('destroy');
+                        return true;
+                    });
+                    $("#vmsg_12346_default").text('Fes clic i arrossega els selectors lliscants per introduir la resposta.');
+                })();
+            });
+    </script>
+<!-- end of answer_row -->
+
+<div id="javatbd489893X408X12346SQ010" class="question-item answer-item numeric-item  text-item  numberonly withslider integeronly integeronly integeronly integeronly integeronly integeronly integeronly integeronly integeronly integeronly col-sm-12">
+
+    <div class="form-group row">
+                    <label class="control-label col-xs-12 numeric-label" for="answer489893X408X12346SQ010">
+                Aconseguir el suport de l’administració pública            </label>
+                <div>
+
+        <div class="slider-container row slider-untouched">
+            <div class="col-xs-12 col-sm-10">
+
+                        <!-- Different col size depending on right|left -->
+                        <!-- TODO: Move PHP to qanda -->
+                                                    <div class="col-xs-12 col-sm-12">
+
+                            <div class="slider slider-horizontal" id=""><div class="slider-track"><div class="slider-track-low" style="left: 0px; width: 0%;"></div><div class="slider-selection" style="left: 0%; width: 0%;"></div><div class="slider-track-high" style="right: 0px; width: 100%;"></div></div><div class="tooltip tooltip-main top in" role="presentation" style="left: 0%; margin-left: -11.5px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">0</div></div><div class="tooltip tooltip-min top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="tooltip tooltip-max bottom" role="presentation" style="top: 18px; display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="slider-handle min-slider-handle round" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div><div class="slider-handle max-slider-handle round hide" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div></div><input class="text form-control pull-left " type="text" name="slider_489893X408X12346SQ010" id="slider_answer489893X408X12346SQ010" value="0" maxlength="25" data-slider-value="null" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-orientation="horizontal" data-slider-handle="round" data-slider-tooltip="always" data-slider-reset="1" data-slider-prefix="" data-slider-suffix="" data-separator="," data-value="0" style="display: none;">
+
+                                                            <div class="pull-left ">
+                                    <span class="help-block">0</span>
+                                </div>
+
+                                                            <div class="pull-right ">
+                                    <span class="help-block">10</span>
+                                </div>
+
+                        </div>
+
+                    </div>
+                                            <div class="col-xs-2">
+                            <div id="answer489893X408X12346SQ010_resetslider" class="pull-left btn btn-default">
+                                <span class="fa fa-times slider-reset" aria-hidden="true"></span>&nbsp;Restaurar                            </div>
+                        </div>
+
+                </div>
+
+
+        </div>
+        <input type="hidden" name="489893X408X12346SQ010" onchange="fixnum_checkconditions(this.value, this.name, this.type)" id="answer489893X408X12346SQ010" value="" class="em_sq_validation good">
+    </div> <!-- form group -->
+</div>
+
+    <div>
+    <style scoped="">
+    /**
+    * Slider custom handle
+    */
+    .slider-handle.custom
+    {
+        background: transparent none; /* You can customize the handle and set a background image */
+    }
+    .slider-handle.custom::before
+    {
+        line-height: 20px;
+        font-size: 20px;
+        font-family: FontAwesome;
+        content: '\f1ae';  /*unicode character ;*/
+    }
+    </style>
+    </div>
+    <script type="text/javascript">
+            // Most of this javascript is here to handle the fact that bootstrapSlider need numerical value in the input
+            // It can't accept "NULL" nor anyother thousand separator than "." (else it become a string)
+            // See : https://github.com/LimeSurvey/LimeSurvey/blob/master/scripts/bootstrap-slider.js#l1453-l1461
+            // If the bootstrapSlider were updated, most of this javascript would not be necessary.
+            $(document).ready(function(){
+                // Set of the needed informations for the slider
+                var myfname = '489893X408X12346SQ010';
+                var $inputEl = $('#slider_answer' + myfname);
+                var $resultEl = $('#answer' + myfname);
+                var $prefix = $inputEl.data('slider-prefix');
+                var $suffix = $inputEl.data('slider-suffix');
+                var $separator = $inputEl.data('separator');
+                var regExpTest = new RegExp(/^-?[0-9]+(.|,)?[0-9]*$/);
+                // We start the slider, and provide it the formated value with prefix and suffix for its tooltip
+                // Use closure for namespace, so we can use theSlider variable for all sliders.
+                (function () {
+                    var theSlider = $inputEl.bootstrapSlider({
+                        value : null,
+                        formatter: function (value) {
+                            var displayValue = "";
+                            if(regExpTest.test(value.toString())){
+                                displayValue = value.toString().replace(/\./,$separator);
+                            }
+                            return $prefix + displayValue + $suffix;
+                        },
+                    });
+
+                    // When user change the value of the slider :
+                    // we need to show the tooltip (if it was hidden)
+                    // and to update the value of the input element with correct format
+                    theSlider.on('slideStart', function(){
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-untouched').removeClass('slider-reset').addClass('slider-touched');
+                        $('#javatbd' + myfname).find('div.tooltip').show(); // Show the tooltip
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $resultEl.val(displayValue).trigger('change'); // We parse it to the element
+                    });
+
+                    theSlider.on('slideStop', function() {
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $inputEl.trigger('onkeyup');
+                        $resultEl.val(displayValue).trigger('change');
+                        //LEMrel12346() // We call the EM
+                        //console.log('$resultEl: ', $resultEl.val());
+                    });
+
+                    // Click the reset button
+                    $('#answer' + '489893X408X12346SQ010' + '_resetslider').on('click', function() {
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-touched').addClass('slider-reset');
+                        $('#javatbd' + myfname).find('div.tooltip').hide();
+
+                        // Position slider button at beginning
+                        theSlider.bootstrapSlider('setValue', null);
+
+                        // Set value to null
+                        $inputEl.attr('value', '').trigger("keyup");
+                        $resultEl.val('').trigger('change');
+                        //LEMrel12346() // We call the EM
+                    });
+
+                    // On form submission, if user action is still on,
+                    // we must force the value of the input to ''
+                    // and force the thousand separator (this bug still affect 2.06)
+                    $("form").submit(function (e) {
+                        $('#javatbd489893X408X12346SQ010 slider').hide(),
+                        $inputEl.bootstrapSlider('destroy');
+                        return true;
+                    });
+                    $("#vmsg_12346_default").text('Fes clic i arrossega els selectors lliscants per introduir la resposta.');
+                })();
+            });
+    </script>
+<!-- end of answer_row -->
+
+<div id="javatbd489893X408X12346SQ011" class="question-item answer-item numeric-item  text-item  numberonly withslider integeronly integeronly integeronly integeronly integeronly integeronly integeronly integeronly integeronly integeronly integeronly col-sm-12">
+
+    <div class="form-group row">
+                    <label class="control-label col-xs-12 numeric-label" for="answer489893X408X12346SQ011">
+                Treball en xarxa amb altres entitats            </label>
+                <div>
+
+        <div class="slider-container row slider-untouched">
+            <div class="col-xs-12 col-sm-10">
+
+                        <!-- Different col size depending on right|left -->
+                        <!-- TODO: Move PHP to qanda -->
+                                                    <div class="col-xs-12 col-sm-12">
+
+                            <div class="slider slider-horizontal" id=""><div class="slider-track"><div class="slider-track-low" style="left: 0px; width: 0%;"></div><div class="slider-selection" style="left: 0%; width: 0%;"></div><div class="slider-track-high" style="right: 0px; width: 100%;"></div></div><div class="tooltip tooltip-main top in" role="presentation" style="left: 0%; margin-left: -11.5px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">0</div></div><div class="tooltip tooltip-min top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="tooltip tooltip-max bottom" role="presentation" style="top: 18px; display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="slider-handle min-slider-handle round" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div><div class="slider-handle max-slider-handle round hide" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" tabindex="0" style="left: 0%;"></div></div><input class="text form-control pull-left " type="text" name="slider_489893X408X12346SQ011" id="slider_answer489893X408X12346SQ011" value="0" maxlength="25" data-slider-value="null" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-orientation="horizontal" data-slider-handle="round" data-slider-tooltip="always" data-slider-reset="1" data-slider-prefix="" data-slider-suffix="" data-separator="," data-value="0" style="display: none;">
+
+                                                            <div class="pull-left ">
+                                    <span class="help-block">0</span>
+                                </div>
+
+                                                            <div class="pull-right ">
+                                    <span class="help-block">10</span>
+                                </div>
+
+                        </div>
+
+                    </div>
+                                            <div class="col-xs-2">
+                            <div id="answer489893X408X12346SQ011_resetslider" class="pull-left btn btn-default">
+                                <span class="fa fa-times slider-reset" aria-hidden="true"></span>&nbsp;Restaurar                            </div>
+                        </div>
+
+                </div>
+
+
+        </div>
+        <input type="hidden" name="489893X408X12346SQ011" onchange="fixnum_checkconditions(this.value, this.name, this.type)" id="answer489893X408X12346SQ011" value="" class="em_sq_validation good">
+    </div> <!-- form group -->
+</div>
+
+    <div>
+    <style scoped="">
+    /**
+    * Slider custom handle
+    */
+    .slider-handle.custom
+    {
+        background: transparent none; /* You can customize the handle and set a background image */
+    }
+    .slider-handle.custom::before
+    {
+        line-height: 20px;
+        font-size: 20px;
+        font-family: FontAwesome;
+        content: '\f1ae';  /*unicode character ;*/
+    }
+    </style>
+    </div>
+    <script type="text/javascript">
+            // Most of this javascript is here to handle the fact that bootstrapSlider need numerical value in the input
+            // It can't accept "NULL" nor anyother thousand separator than "." (else it become a string)
+            // See : https://github.com/LimeSurvey/LimeSurvey/blob/master/scripts/bootstrap-slider.js#l1453-l1461
+            // If the bootstrapSlider were updated, most of this javascript would not be necessary.
+            $(document).ready(function(){
+                // Set of the needed informations for the slider
+                var myfname = '489893X408X12346SQ011';
+                var $inputEl = $('#slider_answer' + myfname);
+                var $resultEl = $('#answer' + myfname);
+                var $prefix = $inputEl.data('slider-prefix');
+                var $suffix = $inputEl.data('slider-suffix');
+                var $separator = $inputEl.data('separator');
+                var regExpTest = new RegExp(/^-?[0-9]+(.|,)?[0-9]*$/);
+                // We start the slider, and provide it the formated value with prefix and suffix for its tooltip
+                // Use closure for namespace, so we can use theSlider variable for all sliders.
+                (function () {
+                    var theSlider = $inputEl.bootstrapSlider({
+                        value : null,
+                        formatter: function (value) {
+                            var displayValue = "";
+                            if(regExpTest.test(value.toString())){
+                                displayValue = value.toString().replace(/\./,$separator);
+                            }
+                            return $prefix + displayValue + $suffix;
+                        },
+                    });
+
+                    // When user change the value of the slider :
+                    // we need to show the tooltip (if it was hidden)
+                    // and to update the value of the input element with correct format
+                    theSlider.on('slideStart', function(){
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-untouched').removeClass('slider-reset').addClass('slider-touched');
+                        $('#javatbd' + myfname).find('div.tooltip').show(); // Show the tooltip
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $resultEl.val(displayValue).trigger('change'); // We parse it to the element
+                    });
+
+                    theSlider.on('slideStop', function() {
+                        value = $inputEl.val(); // We get the current value of the bootstrapSlider
+                        //console.log('value', value);
+                        displayValue = value.toString().replace('.',$separator); // We format it with the right separator
+                        $inputEl.trigger('onkeyup');
+                        $resultEl.val(displayValue).trigger('change');
+                        //LEMrel12346() // We call the EM
+                        //console.log('$resultEl: ', $resultEl.val());
+                    });
+
+                    // Click the reset button
+                    $('#answer' + '489893X408X12346SQ011' + '_resetslider').on('click', function() {
+                        $('#javatbd' + myfname).find('.slider-container').removeClass('slider-touched').addClass('slider-reset');
+                        $('#javatbd' + myfname).find('div.tooltip').hide();
+
+                        // Position slider button at beginning
+                        theSlider.bootstrapSlider('setValue', null);
+
+                        // Set value to null
+                        $inputEl.attr('value', '').trigger("keyup");
+                        $resultEl.val('').trigger('change');
+                        //LEMrel12346() // We call the EM
+                    });
+
+                    // On form submission, if user action is still on,
+                    // we must force the value of the input to ''
+                    // and force the thousand separator (this bug still affect 2.06)
+                    $("form").submit(function (e) {
+                        $('#javatbd489893X408X12346SQ011 slider').hide(),
+                        $inputEl.bootstrapSlider('destroy');
+                        return true;
+                    });
+                    $("#vmsg_12346_default").text('Fes clic i arrossega els selectors lliscants per introduir la resposta.');
+                })();
+            });
+    </script>
+<!-- end of answer_row -->
+
+
+        </div>
+<!-- endof answer -->
+
+            </div>
+        </div>
+
+        <!-- Question help -->
+        <div class="row question-wrapper">
+            <div class="col-sm-12 question-help">
+
+            </div>
+        </div>
+    </div>
+
+<div id="question12378" class="multiple-opt  col-xs-12">
+
+        <!-- Question title -->
+        <div class="row question-wrapper">
+            <div class="col-sm-12 questiontext">
+                <h4 class="qnumcode">
+                <span class="text-danger asterix"></span> c01  A continuació , et plantegem algunes qüestions que podrien aparèixer en el Nou Marc Estratègic i et demanem que marquis aquelles que creus que són reptes de futur per la Fundació. (selecciona tantes com sigui necessari)
+                </h4>
+            </div>
+        </div>
+
+        <!-- Question help -->
+        <div class="row question-wrapper">
+            <div class="col-sm-12 questionhelpcontainer">
+
+            </div>
+        </div>
+
+        <!-- Question man message -->
+        <div class="row question-wrapper">
+            <div class="col-sm-12 questionmancontainer ">
+
+            </div>
+        </div>
+
+        <!-- Question valid message -->
+        <div class="row question-wrapper">
+            <div class="col-sm-12 questionvalidcontainer">
+                <div class="text-info questionhelp" role="alert" id="vmsg_12378">
+    <div id="vmsg_12378_default" class="em_default emtip good">
+
+    <span class="fa fa-exclamation-circle" aria-hidden="true"></span>
+    Selecciona les que corresponguin</div>
+</div>
+
+            </div>
+        </div>
+
+        <!-- Question file valid message -->
+        <div class="row question-wrapper">
+            <div class="col-sm-12 questionfilevalidcontainer">
+
+            </div>
+        </div>
+
+        <!-- Answer -->
+        <div class="row question-wrapper">
+            <div class="col-sm-12 answer">
+                <!-- Multiple Choice -->
+
+<!-- answer -->
+<div class="row multiple-choice-container subquestion-list questions-list checkbox-list">
+        <input type="hidden" name="MULTI489893X409X12378" value="13">
+
+
+<!-- answer_row -->
+<div class="col-sm-12">
+        <div id="javatbd489893X409X12378SQ001" class="question-item answer-item checkbox-item form-group  checkbox">
+            <input class="checkbox" type="checkbox" name="489893X409X12378SQ001" id="answer489893X409X12378SQ001" value="Y" onclick="cancelBubbleThis(event); checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer489893X409X12378SQ001">
+
+            <label for="answer489893X409X12378SQ001" class="answertext"></label>
+
+            <!--
+                 The label text is provided inside a div,
+                 so final user can add paragraph, div, or whatever he wants in the subquestion text
+                 This field is related to the input thanks to attribute aria-labelledby
+            -->
+            <div class="label-text label-clickable" id="label-answer489893X409X12378SQ001">
+                    Innovació tecnològica al servei de les persones            </div>
+
+            <input type="hidden" name="java489893X409X12378SQ001" id="java489893X409X12378SQ001" value="">
+        </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div class="col-sm-12">
+        <div id="javatbd489893X409X12378SQ002" class="question-item answer-item checkbox-item form-group  checkbox">
+            <input class="checkbox" type="checkbox" name="489893X409X12378SQ002" id="answer489893X409X12378SQ002" value="Y" onclick="cancelBubbleThis(event); checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer489893X409X12378SQ002">
+
+            <label for="answer489893X409X12378SQ002" class="answertext"></label>
+
+            <!--
+                 The label text is provided inside a div,
+                 so final user can add paragraph, div, or whatever he wants in the subquestion text
+                 This field is related to the input thanks to attribute aria-labelledby
+            -->
+            <div class="label-text label-clickable" id="label-answer489893X409X12378SQ002">
+                    Impulsar nous models d'atenció a les persones més inclusius            </div>
+
+            <input type="hidden" name="java489893X409X12378SQ002" id="java489893X409X12378SQ002" value="">
+        </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div class="col-sm-12">
+        <div id="javatbd489893X409X12378SQ003" class="question-item answer-item checkbox-item form-group  checkbox">
+            <input class="checkbox" type="checkbox" name="489893X409X12378SQ003" id="answer489893X409X12378SQ003" value="Y" onclick="cancelBubbleThis(event); checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer489893X409X12378SQ003">
+
+            <label for="answer489893X409X12378SQ003" class="answertext"></label>
+
+            <!--
+                 The label text is provided inside a div,
+                 so final user can add paragraph, div, or whatever he wants in the subquestion text
+                 This field is related to the input thanks to attribute aria-labelledby
+            -->
+            <div class="label-text label-clickable" id="label-answer489893X409X12378SQ003">
+                    Potenciar la captació de fons i nous projectes de futur            </div>
+
+            <input type="hidden" name="java489893X409X12378SQ003" id="java489893X409X12378SQ003" value="">
+        </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div class="col-sm-12">
+        <div id="javatbd489893X409X12378SQ004" class="question-item answer-item checkbox-item form-group  checkbox">
+            <input class="checkbox" type="checkbox" name="489893X409X12378SQ004" id="answer489893X409X12378SQ004" value="Y" onclick="cancelBubbleThis(event); checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer489893X409X12378SQ004">
+
+            <label for="answer489893X409X12378SQ004" class="answertext"></label>
+
+            <!--
+                 The label text is provided inside a div,
+                 so final user can add paragraph, div, or whatever he wants in the subquestion text
+                 This field is related to the input thanks to attribute aria-labelledby
+            -->
+            <div class="label-text label-clickable" id="label-answer489893X409X12378SQ004">
+                    Inserció laboral i creació de nous llocs de treball            </div>
+
+            <input type="hidden" name="java489893X409X12378SQ004" id="java489893X409X12378SQ004" value="">
+        </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div class="col-sm-12">
+        <div id="javatbd489893X409X12378SQ005" class="question-item answer-item checkbox-item form-group  checkbox">
+            <input class="checkbox" type="checkbox" name="489893X409X12378SQ005" id="answer489893X409X12378SQ005" value="Y" onclick="cancelBubbleThis(event); checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer489893X409X12378SQ005">
+
+            <label for="answer489893X409X12378SQ005" class="answertext"></label>
+
+            <!--
+                 The label text is provided inside a div,
+                 so final user can add paragraph, div, or whatever he wants in the subquestion text
+                 This field is related to the input thanks to attribute aria-labelledby
+            -->
+            <div class="label-text label-clickable" id="label-answer489893X409X12378SQ005">
+                    Potenciar el voluntariat             </div>
+
+            <input type="hidden" name="java489893X409X12378SQ005" id="java489893X409X12378SQ005" value="">
+        </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div class="col-sm-12">
+        <div id="javatbd489893X409X12378SQ006" class="question-item answer-item checkbox-item form-group  checkbox">
+            <input class="checkbox" type="checkbox" name="489893X409X12378SQ006" id="answer489893X409X12378SQ006" value="Y" onclick="cancelBubbleThis(event); checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer489893X409X12378SQ006">
+
+            <label for="answer489893X409X12378SQ006" class="answertext"></label>
+
+            <!--
+                 The label text is provided inside a div,
+                 so final user can add paragraph, div, or whatever he wants in the subquestion text
+                 This field is related to the input thanks to attribute aria-labelledby
+            -->
+            <div class="label-text label-clickable" id="label-answer489893X409X12378SQ006">
+                    Atenció a nous col·lectius            </div>
+
+            <input type="hidden" name="java489893X409X12378SQ006" id="java489893X409X12378SQ006" value="">
+        </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div class="col-sm-12">
+        <div id="javatbd489893X409X12378SQ007" class="question-item answer-item checkbox-item form-group  checkbox">
+            <input class="checkbox" type="checkbox" name="489893X409X12378SQ007" id="answer489893X409X12378SQ007" value="Y" onclick="cancelBubbleThis(event); checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer489893X409X12378SQ007">
+
+            <label for="answer489893X409X12378SQ007" class="answertext"></label>
+
+            <!--
+                 The label text is provided inside a div,
+                 so final user can add paragraph, div, or whatever he wants in the subquestion text
+                 This field is related to the input thanks to attribute aria-labelledby
+            -->
+            <div class="label-text label-clickable" id="label-answer489893X409X12378SQ007">
+                    Treballar per una entitat i un territori socialment responsable (compromís amb el medi ambient, compra social, transparència i ètica, etc)            </div>
+
+            <input type="hidden" name="java489893X409X12378SQ007" id="java489893X409X12378SQ007" value="">
+        </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div class="col-sm-12">
+        <div id="javatbd489893X409X12378SQ008" class="question-item answer-item checkbox-item form-group  checkbox">
+            <input class="checkbox" type="checkbox" name="489893X409X12378SQ008" id="answer489893X409X12378SQ008" value="Y" onclick="cancelBubbleThis(event); checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer489893X409X12378SQ008">
+
+            <label for="answer489893X409X12378SQ008" class="answertext"></label>
+
+            <!--
+                 The label text is provided inside a div,
+                 so final user can add paragraph, div, or whatever he wants in the subquestion text
+                 This field is related to the input thanks to attribute aria-labelledby
+            -->
+            <div class="label-text label-clickable" id="label-answer489893X409X12378SQ008">
+                    Potenciar el treball en xarxa amb altres entitats            </div>
+
+            <input type="hidden" name="java489893X409X12378SQ008" id="java489893X409X12378SQ008" value="">
+        </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div class="col-sm-12">
+        <div id="javatbd489893X409X12378SQ009" class="question-item answer-item checkbox-item form-group  checkbox">
+            <input class="checkbox" type="checkbox" name="489893X409X12378SQ009" id="answer489893X409X12378SQ009" value="Y" onclick="cancelBubbleThis(event); checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer489893X409X12378SQ009">
+
+            <label for="answer489893X409X12378SQ009" class="answertext"></label>
+
+            <!--
+                 The label text is provided inside a div,
+                 so final user can add paragraph, div, or whatever he wants in the subquestion text
+                 This field is related to the input thanks to attribute aria-labelledby
+            -->
+            <div class="label-text label-clickable" id="label-answer489893X409X12378SQ009">
+                    Defensa del dret de les persones amb discapacitat            </div>
+
+            <input type="hidden" name="java489893X409X12378SQ009" id="java489893X409X12378SQ009" value="">
+        </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div class="col-sm-12">
+        <div id="javatbd489893X409X12378SQ010" class="question-item answer-item checkbox-item form-group  checkbox">
+            <input class="checkbox" type="checkbox" name="489893X409X12378SQ010" id="answer489893X409X12378SQ010" value="Y" onclick="cancelBubbleThis(event); checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer489893X409X12378SQ010">
+
+            <label for="answer489893X409X12378SQ010" class="answertext"></label>
+
+            <!--
+                 The label text is provided inside a div,
+                 so final user can add paragraph, div, or whatever he wants in the subquestion text
+                 This field is related to the input thanks to attribute aria-labelledby
+            -->
+            <div class="label-text label-clickable" id="label-answer489893X409X12378SQ010">
+                    Suport i acompanyament a les famílies            </div>
+
+            <input type="hidden" name="java489893X409X12378SQ010" id="java489893X409X12378SQ010" value="">
+        </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div class="col-sm-12">
+        <div id="javatbd489893X409X12378SQ011" class="question-item answer-item checkbox-item form-group  checkbox">
+            <input class="checkbox" type="checkbox" name="489893X409X12378SQ011" id="answer489893X409X12378SQ011" value="Y" onclick="cancelBubbleThis(event); checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer489893X409X12378SQ011">
+
+            <label for="answer489893X409X12378SQ011" class="answertext"></label>
+
+            <!--
+                 The label text is provided inside a div,
+                 so final user can add paragraph, div, or whatever he wants in the subquestion text
+                 This field is related to the input thanks to attribute aria-labelledby
+            -->
+            <div class="label-text label-clickable" id="label-answer489893X409X12378SQ011">
+                    Benestar de les persones en el marc professional            </div>
+
+            <input type="hidden" name="java489893X409X12378SQ011" id="java489893X409X12378SQ011" value="">
+        </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div class="col-sm-12">
+        <div id="javatbd489893X409X12378SQ013" class="question-item answer-item checkbox-item form-group  checkbox">
+            <input class="checkbox" type="checkbox" name="489893X409X12378SQ013" id="answer489893X409X12378SQ013" value="Y" onclick="cancelBubbleThis(event); checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer489893X409X12378SQ013">
+
+            <label for="answer489893X409X12378SQ013" class="answertext"></label>
+
+            <!--
+                 The label text is provided inside a div,
+                 so final user can add paragraph, div, or whatever he wants in the subquestion text
+                 This field is related to the input thanks to attribute aria-labelledby
+            -->
+            <div class="label-text label-clickable" id="label-answer489893X409X12378SQ013">
+                    Creació de nous serveis, més enllà dels serveis establerts per l'administració            </div>
+
+            <input type="hidden" name="java489893X409X12378SQ013" id="java489893X409X12378SQ013" value="">
+        </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div class="col-sm-12">
+        <div id="javatbd489893X409X12378SQ012" class="question-item answer-item checkbox-item form-group  checkbox">
+            <input class="checkbox" type="checkbox" name="489893X409X12378SQ012" id="answer489893X409X12378SQ012" value="Y" onclick="cancelBubbleThis(event); checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer489893X409X12378SQ012">
+
+            <label for="answer489893X409X12378SQ012" class="answertext"></label>
+
+            <!--
+                 The label text is provided inside a div,
+                 so final user can add paragraph, div, or whatever he wants in the subquestion text
+                 This field is related to the input thanks to attribute aria-labelledby
+            -->
+            <div class="label-text label-clickable" id="label-answer489893X409X12378SQ012">
+                    Creació de noves activitats complementàries als serveis de la Fundació, encara que no estiguin establerts per l'administració            </div>
+
+            <input type="hidden" name="java489893X409X12378SQ012" id="java489893X409X12378SQ012" value="">
+        </div>
+</div>
+<!-- end of answer_row -->
+</div>
+<!-- end of answer -->
+
+            </div>
+        </div>
+
+        <!-- Question help -->
+        <div class="row question-wrapper">
+            <div class="col-sm-12 question-help">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="question12391" class="ranking  col-xs-12 dragDropRanking">
+
+            <!-- Question title -->
+            <div class="row question-wrapper">
+                <div class="col-sm-12 questiontext">
+                    <h4 class="qnumcode">
+                    <span class="text-danger asterix"></span> c02  Els temes que has seleccionat, ordena’ls de més important (posant-lo el primer) a menys important (posant-lo el darrer).
+                    </h4>
+                </div>
+            </div>
+
+            <!-- Question help -->
+            <div class="row question-wrapper">
+                <div class="col-sm-12 questionhelpcontainer">
+
+                </div>
+            </div>
+
+            <!-- Question man message -->
+            <div class="row question-wrapper">
+                <div class="col-sm-12 questionmancontainer ">
+
+                </div>
+            </div>
+
+            <!-- Question valid message -->
+            <div class="row question-wrapper">
+                <div class="col-sm-12 questionvalidcontainer">
+                    <div class="text-info questionhelp" role="alert" id="vmsg_12391">
+        <div id="vmsg_12391_default" class="em_default emtip good"><div class="hide">
+
+        <span class="fa fa-exclamation-circle" aria-hidden="true"></span>
+        Totes les respostes han de ser diferents i cal classificar-les en ordre.</div><div aria-hidden="true">Fes doble clic o bé agafa i arrossega els elements de la llista de l'esquerra per moure'ls cap a la llista de la dreta. El primer element (en importància) del rànquing ha de ser a la posició més alta, mentre que el darrer element ha d'ocupar a la posició més baixa.</div></div>
+    </div>
+
+                </div>
+            </div>
+
+            <!-- Question file valid message -->
+            <div class="row question-wrapper">
+                <div class="col-sm-12 questionfilevalidcontainer">
+
+                </div>
+            </div>
+
+            <!-- Answer -->
+            <div class="row question-wrapper">
+                <div class="col-sm-12 answer">
+
+    <!-- Ranking -->
+
+    <!-- answer -->
+    <div class="ranking-answers">
+        <ul class="list-unstyled answers-list select-list hide">
+
+    <li class="select-item">
+        <label for="answer489893X409X123911">
+            Primera elecció    </label>
+
+        <select class="form-control" name="489893X409X123911" id="answer489893X409X123911">
+                        <option value="" selected="" class="">
+                    Tria...            </option>
+                        <option value="A1" class="">
+                    Innovació tecnològica al servei de les persones            </option>
+                        <option value="A2" class="">
+                    Impulsar nous models d'atenció a les persones més inclusius            </option>
+                        <option value="A3" class="">
+                    Potenciar la captació de fons i nous projectes de futur            </option>
+                        <option value="A4" class="">
+                    Inserció laboral i creació de nous llocs de treball            </option>
+                        <option value="A5" class="">
+                    Potenciar el voluntariat            </option>
+                        <option value="A6" class="">
+                    Atenció a nous col·lectius            </option>
+                        <option value="A7" class="">
+                    Treballar per una entitat i un territori socialment responsable (compromís amb el medi ambient, compra social, transparència i ètica, etc)            </option>
+                        <option value="A8" class="">
+                    Potenciar el treball en xarxa amb altres entitats            </option>
+                        <option value="A9" class="">
+                    Defensa del dret de les persones amb discapacitat            </option>
+                        <option value="A10" class="">
+                    Suport i acompanyament a les famílies            </option>
+                        <option value="A11" class="">
+                    Benestar de les persones en el marc professional            </option>
+                        <option value="A13" class="">
+                    Creació de nous serveis, més enllà dels serveis establerts per l'administració            </option>
+                        <option value="A12" class="">
+                    Creació de noves activitats complementàries als serveis de la Fundació, encara que no estiguin establerts per l'administració            </option>
+                </select>
+
+        <!-- Hidden form: maybe can be replaced with ranking.js -->
+        <input type="hidden" id="java489893X409X123911" disabled="disabled" value="">
+    </li>
+
+    <li class="select-item">
+        <label for="answer489893X409X123912">
+            Elecció de rànquing 2    </label>
+
+        <select class="form-control" name="489893X409X123912" id="answer489893X409X123912">
+                        <option value="" selected="" class="">
+                    Tria...            </option>
+                        <option value="A1" class="">
+                    Innovació tecnològica al servei de les persones            </option>
+                        <option value="A2" class="">
+                    Impulsar nous models d'atenció a les persones més inclusius            </option>
+                        <option value="A3" class="">
+                    Potenciar la captació de fons i nous projectes de futur            </option>
+                        <option value="A4" class="">
+                    Inserció laboral i creació de nous llocs de treball            </option>
+                        <option value="A5" class="">
+                    Potenciar el voluntariat            </option>
+                        <option value="A6" class="">
+                    Atenció a nous col·lectius            </option>
+                        <option value="A7" class="">
+                    Treballar per una entitat i un territori socialment responsable (compromís amb el medi ambient, compra social, transparència i ètica, etc)            </option>
+                        <option value="A8" class="">
+                    Potenciar el treball en xarxa amb altres entitats            </option>
+                        <option value="A9" class="">
+                    Defensa del dret de les persones amb discapacitat            </option>
+                        <option value="A10" class="">
+                    Suport i acompanyament a les famílies            </option>
+                        <option value="A11" class="">
+                    Benestar de les persones en el marc professional            </option>
+                        <option value="A13" class="">
+                    Creació de nous serveis, més enllà dels serveis establerts per l'administració            </option>
+                        <option value="A12" class="">
+                    Creació de noves activitats complementàries als serveis de la Fundació, encara que no estiguin establerts per l'administració            </option>
+                </select>
+
+        <!-- Hidden form: maybe can be replaced with ranking.js -->
+        <input type="hidden" id="java489893X409X123912" disabled="disabled" value="">
+    </li>
+
+    <li class="select-item">
+        <label for="answer489893X409X123913">
+            Elecció de rànquing 3    </label>
+
+        <select class="form-control" name="489893X409X123913" id="answer489893X409X123913">
+                        <option value="" selected="" class="">
+                    Tria...            </option>
+                        <option value="A1" class="">
+                    Innovació tecnològica al servei de les persones            </option>
+                        <option value="A2" class="">
+                    Impulsar nous models d'atenció a les persones més inclusius            </option>
+                        <option value="A3" class="">
+                    Potenciar la captació de fons i nous projectes de futur            </option>
+                        <option value="A4" class="">
+                    Inserció laboral i creació de nous llocs de treball            </option>
+                        <option value="A5" class="">
+                    Potenciar el voluntariat            </option>
+                        <option value="A6" class="">
+                    Atenció a nous col·lectius            </option>
+                        <option value="A7" class="">
+                    Treballar per una entitat i un territori socialment responsable (compromís amb el medi ambient, compra social, transparència i ètica, etc)            </option>
+                        <option value="A8" class="">
+                    Potenciar el treball en xarxa amb altres entitats            </option>
+                        <option value="A9" class="">
+                    Defensa del dret de les persones amb discapacitat            </option>
+                        <option value="A10" class="">
+                    Suport i acompanyament a les famílies            </option>
+                        <option value="A11" class="">
+                    Benestar de les persones en el marc professional            </option>
+                        <option value="A13" class="">
+                    Creació de nous serveis, més enllà dels serveis establerts per l'administració            </option>
+                        <option value="A12" class="">
+                    Creació de noves activitats complementàries als serveis de la Fundació, encara que no estiguin establerts per l'administració            </option>
+                </select>
+
+        <!-- Hidden form: maybe can be replaced with ranking.js -->
+        <input type="hidden" id="java489893X409X123913" disabled="disabled" value="">
+    </li>
+
+    <li class="select-item">
+        <label for="answer489893X409X123914">
+            Elecció de rànquing 4    </label>
+
+        <select class="form-control" name="489893X409X123914" id="answer489893X409X123914">
+                        <option value="" selected="" class="">
+                    Tria...            </option>
+                        <option value="A1" class="">
+                    Innovació tecnològica al servei de les persones            </option>
+                        <option value="A2" class="">
+                    Impulsar nous models d'atenció a les persones més inclusius            </option>
+                        <option value="A3" class="">
+                    Potenciar la captació de fons i nous projectes de futur            </option>
+                        <option value="A4" class="">
+                    Inserció laboral i creació de nous llocs de treball            </option>
+                        <option value="A5" class="">
+                    Potenciar el voluntariat            </option>
+                        <option value="A6" class="">
+                    Atenció a nous col·lectius            </option>
+                        <option value="A7" class="">
+                    Treballar per una entitat i un territori socialment responsable (compromís amb el medi ambient, compra social, transparència i ètica, etc)            </option>
+                        <option value="A8" class="">
+                    Potenciar el treball en xarxa amb altres entitats            </option>
+                        <option value="A9" class="">
+                    Defensa del dret de les persones amb discapacitat            </option>
+                        <option value="A10" class="">
+                    Suport i acompanyament a les famílies            </option>
+                        <option value="A11" class="">
+                    Benestar de les persones en el marc professional            </option>
+                        <option value="A13" class="">
+                    Creació de nous serveis, més enllà dels serveis establerts per l'administració            </option>
+                        <option value="A12" class="">
+                    Creació de noves activitats complementàries als serveis de la Fundació, encara que no estiguin establerts per l'administració            </option>
+                </select>
+
+        <!-- Hidden form: maybe can be replaced with ranking.js -->
+        <input type="hidden" id="java489893X409X123914" disabled="disabled" value="">
+    </li>
+
+    <li class="select-item">
+        <label for="answer489893X409X123915">
+            Elecció de rànquing 5    </label>
+
+        <select class="form-control" name="489893X409X123915" id="answer489893X409X123915">
+                        <option value="" selected="" class="">
+                    Tria...            </option>
+                        <option value="A1" class="">
+                    Innovació tecnològica al servei de les persones            </option>
+                        <option value="A2" class="">
+                    Impulsar nous models d'atenció a les persones més inclusius            </option>
+                        <option value="A3" class="">
+                    Potenciar la captació de fons i nous projectes de futur            </option>
+                        <option value="A4" class="">
+                    Inserció laboral i creació de nous llocs de treball            </option>
+                        <option value="A5" class="">
+                    Potenciar el voluntariat            </option>
+                        <option value="A6" class="">
+                    Atenció a nous col·lectius            </option>
+                        <option value="A7" class="">
+                    Treballar per una entitat i un territori socialment responsable (compromís amb el medi ambient, compra social, transparència i ètica, etc)            </option>
+                        <option value="A8" class="">
+                    Potenciar el treball en xarxa amb altres entitats            </option>
+                        <option value="A9" class="">
+                    Defensa del dret de les persones amb discapacitat            </option>
+                        <option value="A10" class="">
+                    Suport i acompanyament a les famílies            </option>
+                        <option value="A11" class="">
+                    Benestar de les persones en el marc professional            </option>
+                        <option value="A13" class="">
+                    Creació de nous serveis, més enllà dels serveis establerts per l'administració            </option>
+                        <option value="A12" class="">
+                    Creació de noves activitats complementàries als serveis de la Fundació, encara que no estiguin establerts per l'administració            </option>
+                </select>
+
+        <!-- Hidden form: maybe can be replaced with ranking.js -->
+        <input type="hidden" id="java489893X409X123915" disabled="disabled" value="">
+    </li>
+
+    <li class="select-item">
+        <label for="answer489893X409X123916">
+            Elecció de rànquing 6    </label>
+
+        <select class="form-control" name="489893X409X123916" id="answer489893X409X123916">
+                        <option value="" selected="" class="">
+                    Tria...            </option>
+                        <option value="A1" class="">
+                    Innovació tecnològica al servei de les persones            </option>
+                        <option value="A2" class="">
+                    Impulsar nous models d'atenció a les persones més inclusius            </option>
+                        <option value="A3" class="">
+                    Potenciar la captació de fons i nous projectes de futur            </option>
+                        <option value="A4" class="">
+                    Inserció laboral i creació de nous llocs de treball            </option>
+                        <option value="A5" class="">
+                    Potenciar el voluntariat            </option>
+                        <option value="A6" class="">
+                    Atenció a nous col·lectius            </option>
+                        <option value="A7" class="">
+                    Treballar per una entitat i un territori socialment responsable (compromís amb el medi ambient, compra social, transparència i ètica, etc)            </option>
+                        <option value="A8" class="">
+                    Potenciar el treball en xarxa amb altres entitats            </option>
+                        <option value="A9" class="">
+                    Defensa del dret de les persones amb discapacitat            </option>
+                        <option value="A10" class="">
+                    Suport i acompanyament a les famílies            </option>
+                        <option value="A11" class="">
+                    Benestar de les persones en el marc professional            </option>
+                        <option value="A13" class="">
+                    Creació de nous serveis, més enllà dels serveis establerts per l'administració            </option>
+                        <option value="A12" class="">
+                    Creació de noves activitats complementàries als serveis de la Fundació, encara que no estiguin establerts per l'administració            </option>
+                </select>
+
+        <!-- Hidden form: maybe can be replaced with ranking.js -->
+        <input type="hidden" id="java489893X409X123916" disabled="disabled" value="">
+    </li>
+
+    <li class="select-item">
+        <label for="answer489893X409X123917">
+            Elecció de rànquing 7    </label>
+
+        <select class="form-control" name="489893X409X123917" id="answer489893X409X123917">
+                        <option value="" selected="" class="">
+                    Tria...            </option>
+                        <option value="A1" class="">
+                    Innovació tecnològica al servei de les persones            </option>
+                        <option value="A2" class="">
+                    Impulsar nous models d'atenció a les persones més inclusius            </option>
+                        <option value="A3" class="">
+                    Potenciar la captació de fons i nous projectes de futur            </option>
+                        <option value="A4" class="">
+                    Inserció laboral i creació de nous llocs de treball            </option>
+                        <option value="A5" class="">
+                    Potenciar el voluntariat            </option>
+                        <option value="A6" class="">
+                    Atenció a nous col·lectius            </option>
+                        <option value="A7" class="">
+                    Treballar per una entitat i un territori socialment responsable (compromís amb el medi ambient, compra social, transparència i ètica, etc)            </option>
+                        <option value="A8" class="">
+                    Potenciar el treball en xarxa amb altres entitats            </option>
+                        <option value="A9" class="">
+                    Defensa del dret de les persones amb discapacitat            </option>
+                        <option value="A10" class="">
+                    Suport i acompanyament a les famílies            </option>
+                        <option value="A11" class="">
+                    Benestar de les persones en el marc professional            </option>
+                        <option value="A13" class="">
+                    Creació de nous serveis, més enllà dels serveis establerts per l'administració            </option>
+                        <option value="A12" class="">
+                    Creació de noves activitats complementàries als serveis de la Fundació, encara que no estiguin establerts per l'administració            </option>
+                </select>
+
+        <!-- Hidden form: maybe can be replaced with ranking.js -->
+        <input type="hidden" id="java489893X409X123917" disabled="disabled" value="">
+    </li>
+
+    <li class="select-item">
+        <label for="answer489893X409X123918">
+            Elecció de rànquing 8    </label>
+
+        <select class="form-control" name="489893X409X123918" id="answer489893X409X123918">
+                        <option value="" selected="" class="">
+                    Tria...            </option>
+                        <option value="A1" class="">
+                    Innovació tecnològica al servei de les persones            </option>
+                        <option value="A2" class="">
+                    Impulsar nous models d'atenció a les persones més inclusius            </option>
+                        <option value="A3" class="">
+                    Potenciar la captació de fons i nous projectes de futur            </option>
+                        <option value="A4" class="">
+                    Inserció laboral i creació de nous llocs de treball            </option>
+                        <option value="A5" class="">
+                    Potenciar el voluntariat            </option>
+                        <option value="A6" class="">
+                    Atenció a nous col·lectius            </option>
+                        <option value="A7" class="">
+                    Treballar per una entitat i un territori socialment responsable (compromís amb el medi ambient, compra social, transparència i ètica, etc)            </option>
+                        <option value="A8" class="">
+                    Potenciar el treball en xarxa amb altres entitats            </option>
+                        <option value="A9" class="">
+                    Defensa del dret de les persones amb discapacitat            </option>
+                        <option value="A10" class="">
+                    Suport i acompanyament a les famílies            </option>
+                        <option value="A11" class="">
+                    Benestar de les persones en el marc professional            </option>
+                        <option value="A13" class="">
+                    Creació de nous serveis, més enllà dels serveis establerts per l'administració            </option>
+                        <option value="A12" class="">
+                    Creació de noves activitats complementàries als serveis de la Fundació, encara que no estiguin establerts per l'administració            </option>
+                </select>
+
+        <!-- Hidden form: maybe can be replaced with ranking.js -->
+        <input type="hidden" id="java489893X409X123918" disabled="disabled" value="">
+    </li>
+
+    <li class="select-item">
+        <label for="answer489893X409X123919">
+            Elecció de rànquing 9    </label>
+
+        <select class="form-control" name="489893X409X123919" id="answer489893X409X123919">
+                        <option value="" selected="" class="">
+                    Tria...            </option>
+                        <option value="A1" class="">
+                    Innovació tecnològica al servei de les persones            </option>
+                        <option value="A2" class="">
+                    Impulsar nous models d'atenció a les persones més inclusius            </option>
+                        <option value="A3" class="">
+                    Potenciar la captació de fons i nous projectes de futur            </option>
+                        <option value="A4" class="">
+                    Inserció laboral i creació de nous llocs de treball            </option>
+                        <option value="A5" class="">
+                    Potenciar el voluntariat            </option>
+                        <option value="A6" class="">
+                    Atenció a nous col·lectius            </option>
+                        <option value="A7" class="">
+                    Treballar per una entitat i un territori socialment responsable (compromís amb el medi ambient, compra social, transparència i ètica, etc)            </option>
+                        <option value="A8" class="">
+                    Potenciar el treball en xarxa amb altres entitats            </option>
+                        <option value="A9" class="">
+                    Defensa del dret de les persones amb discapacitat            </option>
+                        <option value="A10" class="">
+                    Suport i acompanyament a les famílies            </option>
+                        <option value="A11" class="">
+                    Benestar de les persones en el marc professional            </option>
+                        <option value="A13" class="">
+                    Creació de nous serveis, més enllà dels serveis establerts per l'administració            </option>
+                        <option value="A12" class="">
+                    Creació de noves activitats complementàries als serveis de la Fundació, encara que no estiguin establerts per l'administració            </option>
+                </select>
+
+        <!-- Hidden form: maybe can be replaced with ranking.js -->
+        <input type="hidden" id="java489893X409X123919" disabled="disabled" value="">
+    </li>
+
+    <li class="select-item">
+        <label for="answer489893X409X1239110">
+            Elecció de rànquing 10    </label>
+
+        <select class="form-control" name="489893X409X1239110" id="answer489893X409X1239110">
+                        <option value="" selected="" class="">
+                    Tria...            </option>
+                        <option value="A1" class="">
+                    Innovació tecnològica al servei de les persones            </option>
+                        <option value="A2" class="">
+                    Impulsar nous models d'atenció a les persones més inclusius            </option>
+                        <option value="A3" class="">
+                    Potenciar la captació de fons i nous projectes de futur            </option>
+                        <option value="A4" class="">
+                    Inserció laboral i creació de nous llocs de treball            </option>
+                        <option value="A5" class="">
+                    Potenciar el voluntariat            </option>
+                        <option value="A6" class="">
+                    Atenció a nous col·lectius            </option>
+                        <option value="A7" class="">
+                    Treballar per una entitat i un territori socialment responsable (compromís amb el medi ambient, compra social, transparència i ètica, etc)            </option>
+                        <option value="A8" class="">
+                    Potenciar el treball en xarxa amb altres entitats            </option>
+                        <option value="A9" class="">
+                    Defensa del dret de les persones amb discapacitat            </option>
+                        <option value="A10" class="">
+                    Suport i acompanyament a les famílies            </option>
+                        <option value="A11" class="">
+                    Benestar de les persones en el marc professional            </option>
+                        <option value="A13" class="">
+                    Creació de nous serveis, més enllà dels serveis establerts per l'administració            </option>
+                        <option value="A12" class="">
+                    Creació de noves activitats complementàries als serveis de la Fundació, encara que no estiguin establerts per l'administració            </option>
+                </select>
+
+        <!-- Hidden form: maybe can be replaced with ranking.js -->
+        <input type="hidden" id="java489893X409X1239110" disabled="disabled" value="">
+    </li>
+
+    <li class="select-item">
+        <label for="answer489893X409X1239111">
+            Elecció de rànquing 11    </label>
+
+        <select class="form-control" name="489893X409X1239111" id="answer489893X409X1239111">
+                        <option value="" selected="" class="">
+                    Tria...            </option>
+                        <option value="A1" class="">
+                    Innovació tecnològica al servei de les persones            </option>
+                        <option value="A2" class="">
+                    Impulsar nous models d'atenció a les persones més inclusius            </option>
+                        <option value="A3" class="">
+                    Potenciar la captació de fons i nous projectes de futur            </option>
+                        <option value="A4" class="">
+                    Inserció laboral i creació de nous llocs de treball            </option>
+                        <option value="A5" class="">
+                    Potenciar el voluntariat            </option>
+                        <option value="A6" class="">
+                    Atenció a nous col·lectius            </option>
+                        <option value="A7" class="">
+                    Treballar per una entitat i un territori socialment responsable (compromís amb el medi ambient, compra social, transparència i ètica, etc)            </option>
+                        <option value="A8" class="">
+                    Potenciar el treball en xarxa amb altres entitats            </option>
+                        <option value="A9" class="">
+                    Defensa del dret de les persones amb discapacitat            </option>
+                        <option value="A10" class="">
+                    Suport i acompanyament a les famílies            </option>
+                        <option value="A11" class="">
+                    Benestar de les persones en el marc professional            </option>
+                        <option value="A13" class="">
+                    Creació de nous serveis, més enllà dels serveis establerts per l'administració            </option>
+                        <option value="A12" class="">
+                    Creació de noves activitats complementàries als serveis de la Fundació, encara que no estiguin establerts per l'administració            </option>
+                </select>
+
+        <!-- Hidden form: maybe can be replaced with ranking.js -->
+        <input type="hidden" id="java489893X409X1239111" disabled="disabled" value="">
+    </li>
+
+    <li class="select-item">
+        <label for="answer489893X409X1239112">
+            Elecció de rànquing 12    </label>
+
+        <select class="form-control" name="489893X409X1239112" id="answer489893X409X1239112">
+                        <option value="" selected="" class="">
+                    Tria...            </option>
+                        <option value="A1" class="">
+                    Innovació tecnològica al servei de les persones            </option>
+                        <option value="A2" class="">
+                    Impulsar nous models d'atenció a les persones més inclusius            </option>
+                        <option value="A3" class="">
+                    Potenciar la captació de fons i nous projectes de futur            </option>
+                        <option value="A4" class="">
+                    Inserció laboral i creació de nous llocs de treball            </option>
+                        <option value="A5" class="">
+                    Potenciar el voluntariat            </option>
+                        <option value="A6" class="">
+                    Atenció a nous col·lectius            </option>
+                        <option value="A7" class="">
+                    Treballar per una entitat i un territori socialment responsable (compromís amb el medi ambient, compra social, transparència i ètica, etc)            </option>
+                        <option value="A8" class="">
+                    Potenciar el treball en xarxa amb altres entitats            </option>
+                        <option value="A9" class="">
+                    Defensa del dret de les persones amb discapacitat            </option>
+                        <option value="A10" class="">
+                    Suport i acompanyament a les famílies            </option>
+                        <option value="A11" class="">
+                    Benestar de les persones en el marc professional            </option>
+                        <option value="A13" class="">
+                    Creació de nous serveis, més enllà dels serveis establerts per l'administració            </option>
+                        <option value="A12" class="">
+                    Creació de noves activitats complementàries als serveis de la Fundació, encara que no estiguin establerts per l'administració            </option>
+                </select>
+
+        <!-- Hidden form: maybe can be replaced with ranking.js -->
+        <input type="hidden" id="java489893X409X1239112" disabled="disabled" value="">
+    </li>
+
+    <li class="select-item">
+        <label for="answer489893X409X1239113">
+            Elecció de rànquing 13    </label>
+
+        <select class="form-control" name="489893X409X1239113" id="answer489893X409X1239113">
+                        <option value="" selected="" class="">
+                    Tria...            </option>
+                        <option value="A1" class="">
+                    Innovació tecnològica al servei de les persones            </option>
+                        <option value="A2" class="">
+                    Impulsar nous models d'atenció a les persones més inclusius            </option>
+                        <option value="A3" class="">
+                    Potenciar la captació de fons i nous projectes de futur            </option>
+                        <option value="A4" class="">
+                    Inserció laboral i creació de nous llocs de treball            </option>
+                        <option value="A5" class="">
+                    Potenciar el voluntariat            </option>
+                        <option value="A6" class="">
+                    Atenció a nous col·lectius            </option>
+                        <option value="A7" class="">
+                    Treballar per una entitat i un territori socialment responsable (compromís amb el medi ambient, compra social, transparència i ètica, etc)            </option>
+                        <option value="A8" class="">
+                    Potenciar el treball en xarxa amb altres entitats            </option>
+                        <option value="A9" class="">
+                    Defensa del dret de les persones amb discapacitat            </option>
+                        <option value="A10" class="">
+                    Suport i acompanyament a les famílies            </option>
+                        <option value="A11" class="">
+                    Benestar de les persones en el marc professional            </option>
+                        <option value="A13" class="">
+                    Creació de nous serveis, més enllà dels serveis establerts per l'administració            </option>
+                        <option value="A12" class="">
+                    Creació de noves activitats complementàries als serveis de la Fundació, encara que no estiguin establerts per l'administració            </option>
+                </select>
+
+        <!-- Hidden form: maybe can be replaced with ranking.js -->
+        <input type="hidden" id="java489893X409X1239113" disabled="disabled" value="">
+    </li>
+        </ul><div class="dragDropTable" aria-hidden="true">       <div class="columns2">        <strong class="SortableTitle">Les opcions</strong>        <div class="ui-state-default dragDropChoices">           <ul id="sortable-choice-12391" class="connectedSortable12391 dragDropChoiceList ui-sortable" style="min-height: 575px;">                        <li class="ui-state-default choice ui-sortable-handle" id="javatbd489893X409X12391A1" style="min-height: 40px;">
+                Innovació tecnològica al servei de les persones        </li><li class="ui-state-default choice ui-sortable-handle" id="javatbd489893X409X12391A2" style="min-height: 40px;">
+                Impulsar nous models d'atenció a les persones més inclusius        </li><li class="ui-state-default choice ui-sortable-handle" id="javatbd489893X409X12391A3" style="min-height: 40px;">
+                Potenciar la captació de fons i nous projectes de futur        </li><li class="ui-state-default choice ui-sortable-handle" id="javatbd489893X409X12391A4" style="min-height: 40px;">
+                Inserció laboral i creació de nous llocs de treball        </li><li class="ui-state-default choice ui-sortable-handle" id="javatbd489893X409X12391A5" style="min-height: 40px;">
+                Potenciar el voluntariat         </li><li class="ui-state-default choice ui-sortable-handle" id="javatbd489893X409X12391A6" style="min-height: 40px;">
+                Atenció a nous col·lectius        </li><li class="ui-state-default choice ui-sortable-handle" id="javatbd489893X409X12391A7" style="min-height: 40px;">
+                Treballar per una entitat i un territori socialment responsable (compromís amb el medi ambient, compra social, transparència i ètica, etc)        </li><li class="ui-state-default choice ui-sortable-handle" id="javatbd489893X409X12391A8" style="min-height: 40px;">
+                Potenciar el treball en xarxa amb altres entitats        </li><li class="ui-state-default choice ui-sortable-handle" id="javatbd489893X409X12391A9" style="min-height: 40px;">
+                Defensa del dret de les persones amb discapacitat        </li><li class="ui-state-default choice ui-sortable-handle" id="javatbd489893X409X12391A10" style="min-height: 40px;">
+                Suport i acompanyament a les famílies        </li><li class="ui-state-default choice ui-sortable-handle" id="javatbd489893X409X12391A11" style="min-height: 40px;">
+                Benestar de les persones en el marc professional        </li><li class="ui-state-default choice ui-sortable-handle" id="javatbd489893X409X12391A13" style="min-height: 40px;">
+                Creació de nous serveis, més enllà dels serveis establerts per l'administració        </li><li class="ui-state-default choice ui-sortable-handle" id="javatbd489893X409X12391A12" style="min-height: 40px;">
+                Creació de noves activitats complementàries als serveis de la Fundació, encara que no estiguin establerts per l'administració        </li></ul>         </div>       </div>      <div class="columns2">        <strong class="SortableTitle">La teva classificació</strong>        <div class="ui-state-default dragDropRanks">           <ol id="sortable-rank-12391" class="connectedSortable12391 dragDropRankList selectionSortable ui-sortable" style="min-height: 575px;">                        </ol>         </div>       </div>     </div>
+
+        <div style="display:none" id="ranking-12391-maxans">
+            13    </div>
+
+        <div style="display:none" id="ranking-12391-minans">
+            0    </div>
+
+        <div style="display:none" id="ranking-12391-name">
+            489893X409X12391    </div>
+    </div>
+
+    <!--  The list with HTML answers -->
+    <div style="display:none">
+                <div id="htmlblock-12391-A1">
+                Innovació tecnològica al servei de les persones        </div>
+                <div id="htmlblock-12391-A2">
+                Impulsar nous models d'atenció a les persones més inclusius        </div>
+                <div id="htmlblock-12391-A3">
+                Potenciar la captació de fons i nous projectes de futur        </div>
+                <div id="htmlblock-12391-A4">
+                Inserció laboral i creació de nous llocs de treball        </div>
+                <div id="htmlblock-12391-A5">
+                Potenciar el voluntariat         </div>
+                <div id="htmlblock-12391-A6">
+                Atenció a nous col·lectius        </div>
+                <div id="htmlblock-12391-A7">
+                Treballar per una entitat i un territori socialment responsable (compromís amb el medi ambient, compra social, transparència i ètica, etc)        </div>
+                <div id="htmlblock-12391-A8">
+                Potenciar el treball en xarxa amb altres entitats        </div>
+                <div id="htmlblock-12391-A9">
+                Defensa del dret de les persones amb discapacitat        </div>
+                <div id="htmlblock-12391-A10">
+                Suport i acompanyament a les famílies        </div>
+                <div id="htmlblock-12391-A11">
+                Benestar de les persones en el marc professional        </div>
+                <div id="htmlblock-12391-A13">
+                Creació de nous serveis, més enllà dels serveis establerts per l'administració        </div>
+                <div id="htmlblock-12391-A12">
+                Creació de noves activitats complementàries als serveis de la Fundació, encara que no estiguin establerts per l'administració        </div>
+        </div>
+
+
+    <script type="text/javascript">
+        <!--
+        var aRankingTranslations = {
+             choicetitle: 'Les opcions',
+             ranktitle: 'La teva classificació',
+             rankhelp: 'Fes doble clic o bé agafa i arrossega els elements de la llista de l\'esquerra per moure\'ls cap a la llista de la dreta. El primer element (en importància) del rànquing ha de ser a la posició més alta, mentre que el darrer element ha d\'ocupar a la posició més baixa.'
+            };
+
+        doDragDropRank(12391, 1,1,1);
+        -->
+    </script>
+    <!-- end of answer -->
+
+                </div>
+            </div>
+
+            <!-- Question help -->
+            <div class="row question-wrapper">
+                <div class="col-sm-12 question-help">
+
+                </div>
+            </div>
+        </div>
+
+        <div id="question12405" class="multiple-opt  col-xs-12">
+
+                <!-- Question title -->
+                <div class="row question-wrapper">
+                    <div class="col-sm-12 questiontext">
+                        <h4 class="qnumcode">
+                        <span class="text-danger asterix"></span> c05  Quins dels següents temes creieu que són reptes de futur per la Fundació? (selecciona tants com sigui necessari)
+                        </h4>
+                    </div>
+                </div>
+
+                <!-- Question help -->
+                <div class="row question-wrapper">
+                    <div class="col-sm-12 questionhelpcontainer">
+
+                    </div>
+                </div>
+
+                <!-- Question man message -->
+                <div class="row question-wrapper">
+                    <div class="col-sm-12 questionmancontainer ">
+
+                    </div>
+                </div>
+
+                <!-- Question valid message -->
+                <div class="row question-wrapper">
+                    <div class="col-sm-12 questionvalidcontainer">
+                        <div class="text-info questionhelp" role="alert" id="vmsg_12405">
+            <div id="vmsg_12405_default" class="em_default emtip good">
+
+            <span class="fa fa-exclamation-circle" aria-hidden="true"></span>
+            Selecciona les que corresponguin</div>
+        </div>
+
+                    </div>
+                </div>
+
+                <!-- Question file valid message -->
+                <div class="row question-wrapper">
+                    <div class="col-sm-12 questionfilevalidcontainer">
+
+                    </div>
+                </div>
+
+                <!-- Answer -->
+                <div class="row question-wrapper">
+                    <div class="col-sm-12 answer">
+                        <!-- Multiple Choice -->
+
+        <!-- answer -->
+        <div class="row multiple-choice-container subquestion-list questions-list checkbox-list">
+                <input type="hidden" name="MULTI489893X409X12405" value="5">
+
+
+        <!-- answer_row -->
+        <div class="col-sm-12">
+                <div id="javatbd489893X409X12405SQ001" class="question-item answer-item checkbox-item form-group  checkbox">
+                    <input class="checkbox" type="checkbox" name="489893X409X12405SQ001" id="answer489893X409X12405SQ001" value="Y" onclick="cancelBubbleThis(event); checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer489893X409X12405SQ001">
+
+                    <label for="answer489893X409X12405SQ001" class="answertext"></label>
+
+                    <!--
+                         The label text is provided inside a div,
+                         so final user can add paragraph, div, or whatever he wants in the subquestion text
+                         This field is related to the input thanks to attribute aria-labelledby
+                    -->
+                    <div class="label-text label-clickable" id="label-answer489893X409X12405SQ001">
+                            Accions formatives adreçades a famílies            </div>
+
+                    <input type="hidden" name="java489893X409X12405SQ001" id="java489893X409X12405SQ001" value="">
+                </div>
+        </div>
+        <!-- end of answer_row -->
+
+        <!-- answer_row -->
+        <div class="col-sm-12">
+                <div id="javatbd489893X409X12405SQ002" class="question-item answer-item checkbox-item form-group  checkbox">
+                    <input class="checkbox" type="checkbox" name="489893X409X12405SQ002" id="answer489893X409X12405SQ002" value="Y" onclick="cancelBubbleThis(event); checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer489893X409X12405SQ002">
+
+                    <label for="answer489893X409X12405SQ002" class="answertext"></label>
+
+                    <!--
+                         The label text is provided inside a div,
+                         so final user can add paragraph, div, or whatever he wants in the subquestion text
+                         This field is related to the input thanks to attribute aria-labelledby
+                    -->
+                    <div class="label-text label-clickable" id="label-answer489893X409X12405SQ002">
+                            Organitzar activitats de trobada i oci             </div>
+
+                    <input type="hidden" name="java489893X409X12405SQ002" id="java489893X409X12405SQ002" value="">
+                </div>
+        </div>
+        <!-- end of answer_row -->
+
+        <!-- answer_row -->
+        <div class="col-sm-12">
+                <div id="javatbd489893X409X12405SQ003" class="question-item answer-item checkbox-item form-group  checkbox">
+                    <input class="checkbox" type="checkbox" name="489893X409X12405SQ003" id="answer489893X409X12405SQ003" value="Y" onclick="cancelBubbleThis(event); checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer489893X409X12405SQ003">
+
+                    <label for="answer489893X409X12405SQ003" class="answertext"></label>
+
+                    <!--
+                         The label text is provided inside a div,
+                         so final user can add paragraph, div, or whatever he wants in the subquestion text
+                         This field is related to the input thanks to attribute aria-labelledby
+                    -->
+                    <div class="label-text label-clickable" id="label-answer489893X409X12405SQ003">
+                            Grups de suport de famílies             </div>
+
+                    <input type="hidden" name="java489893X409X12405SQ003" id="java489893X409X12405SQ003" value="">
+                </div>
+        </div>
+        <!-- end of answer_row -->
+
+        <!-- answer_row -->
+        <div class="col-sm-12">
+                <div id="javatbd489893X409X12405SQ004" class="question-item answer-item checkbox-item form-group  checkbox">
+                    <input class="checkbox" type="checkbox" name="489893X409X12405SQ004" id="answer489893X409X12405SQ004" value="Y" onclick="cancelBubbleThis(event); checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer489893X409X12405SQ004">
+
+                    <label for="answer489893X409X12405SQ004" class="answertext"></label>
+
+                    <!--
+                         The label text is provided inside a div,
+                         so final user can add paragraph, div, or whatever he wants in the subquestion text
+                         This field is related to the input thanks to attribute aria-labelledby
+                    -->
+                    <div class="label-text label-clickable" id="label-answer489893X409X12405SQ004">
+                            Recollir necessitats de futur de les famílies            </div>
+
+                    <input type="hidden" name="java489893X409X12405SQ004" id="java489893X409X12405SQ004" value="">
+                </div>
+        </div>
+        <!-- end of answer_row -->
+
+        <!-- answer_row -->
+        <div class="col-sm-12">
+                <div id="javatbd489893X409X12405SQ005" class="question-item answer-item checkbox-item form-group  checkbox">
+                    <input class="checkbox" type="checkbox" name="489893X409X12405SQ005" id="answer489893X409X12405SQ005" value="Y" onclick="cancelBubbleThis(event); checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer489893X409X12405SQ005">
+
+                    <label for="answer489893X409X12405SQ005" class="answertext"></label>
+
+                    <!--
+                         The label text is provided inside a div,
+                         so final user can add paragraph, div, or whatever he wants in the subquestion text
+                         This field is related to the input thanks to attribute aria-labelledby
+                    -->
+                    <div class="label-text label-clickable" id="label-answer489893X409X12405SQ005">
+                            Implicar a les famílies en projectes de futur            </div>
+
+                    <input type="hidden" name="java489893X409X12405SQ005" id="java489893X409X12405SQ005" value="">
+                </div>
+        </div>
+        <!-- end of answer_row -->
+        </div>
+        <!-- end of answer -->
+
+                    </div>
+                </div>
+
+                <!-- Question help -->
+                <div class="row question-wrapper">
+                    <div class="col-sm-12 question-help">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="question12412" class="ranking  col-xs-12 dragDropRanking">
+
+                    <!-- Question title -->
+                    <div class="row question-wrapper">
+                        <div class="col-sm-12 questiontext">
+                            <h4 class="qnumcode">
+                            <span class="text-danger asterix"></span> c06  Els que has seleccionat, ordena’ls de més important (posant-lo el primer) a menys important (posant-lo el darrer)
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Question help -->
+                    <div class="row question-wrapper">
+                        <div class="col-sm-12 questionhelpcontainer">
+
+                        </div>
+                    </div>
+
+                    <!-- Question man message -->
+                    <div class="row question-wrapper">
+                        <div class="col-sm-12 questionmancontainer ">
+
+                        </div>
+                    </div>
+
+                    <!-- Question valid message -->
+                    <div class="row question-wrapper">
+                        <div class="col-sm-12 questionvalidcontainer">
+                            <div class="text-info questionhelp" role="alert" id="vmsg_12412">
+                <div id="vmsg_12412_default" class="em_default emtip good"><div class="hide">
+
+                <span class="fa fa-exclamation-circle" aria-hidden="true"></span>
+                Totes les respostes han de ser diferents i cal classificar-les en ordre.</div><div aria-hidden="true">Fes doble clic o bé agafa i arrossega els elements de la llista de l'esquerra per moure'ls cap a la llista de la dreta. El primer element (en importància) del rànquing ha de ser a la posició més alta, mentre que el darrer element ha d'ocupar a la posició més baixa.</div></div>
+            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Question file valid message -->
+                    <div class="row question-wrapper">
+                        <div class="col-sm-12 questionfilevalidcontainer">
+
+                        </div>
+                    </div>
+
+                    <!-- Answer -->
+                    <div class="row question-wrapper">
+                        <div class="col-sm-12 answer">
+
+            <!-- Ranking -->
+
+            <!-- answer -->
+            <div class="ranking-answers">
+                <ul class="list-unstyled answers-list select-list hide">
+
+            <li class="select-item">
+                <label for="answer489893X409X124121">
+                    Primera elecció    </label>
+
+                <select class="form-control" name="489893X409X124121" id="answer489893X409X124121">
+                                <option value="" selected="" class="">
+                            Tria...            </option>
+                                <option value="A1" class="">
+                            Accions formatives adreçades a famílies            </option>
+                                <option value="A2" class="">
+                            Organitzar activitats de trobada i oci            </option>
+                                <option value="A3" class="">
+                            Grups de suport de famílies            </option>
+                                <option value="A4" class="">
+                            Recollir necessitats de futur de les famílies            </option>
+                                <option value="A5" class="">
+                            Implicar a les famílies en projectes de futur            </option>
+                        </select>
+
+                <!-- Hidden form: maybe can be replaced with ranking.js -->
+                <input type="hidden" id="java489893X409X124121" disabled="disabled" value="">
+            </li>
+
+            <li class="select-item">
+                <label for="answer489893X409X124122">
+                    Elecció de rànquing 2    </label>
+
+                <select class="form-control" name="489893X409X124122" id="answer489893X409X124122">
+                                <option value="" selected="" class="">
+                            Tria...            </option>
+                                <option value="A1" class="">
+                            Accions formatives adreçades a famílies            </option>
+                                <option value="A2" class="">
+                            Organitzar activitats de trobada i oci            </option>
+                                <option value="A3" class="">
+                            Grups de suport de famílies            </option>
+                                <option value="A4" class="">
+                            Recollir necessitats de futur de les famílies            </option>
+                                <option value="A5" class="">
+                            Implicar a les famílies en projectes de futur            </option>
+                        </select>
+
+                <!-- Hidden form: maybe can be replaced with ranking.js -->
+                <input type="hidden" id="java489893X409X124122" disabled="disabled" value="">
+            </li>
+
+            <li class="select-item">
+                <label for="answer489893X409X124123">
+                    Elecció de rànquing 3    </label>
+
+                <select class="form-control" name="489893X409X124123" id="answer489893X409X124123">
+                                <option value="" selected="" class="">
+                            Tria...            </option>
+                                <option value="A1" class="">
+                            Accions formatives adreçades a famílies            </option>
+                                <option value="A2" class="">
+                            Organitzar activitats de trobada i oci            </option>
+                                <option value="A3" class="">
+                            Grups de suport de famílies            </option>
+                                <option value="A4" class="">
+                            Recollir necessitats de futur de les famílies            </option>
+                                <option value="A5" class="">
+                            Implicar a les famílies en projectes de futur            </option>
+                        </select>
+
+                <!-- Hidden form: maybe can be replaced with ranking.js -->
+                <input type="hidden" id="java489893X409X124123" disabled="disabled" value="">
+            </li>
+
+            <li class="select-item">
+                <label for="answer489893X409X124124">
+                    Elecció de rànquing 4    </label>
+
+                <select class="form-control" name="489893X409X124124" id="answer489893X409X124124">
+                                <option value="" selected="" class="">
+                            Tria...            </option>
+                                <option value="A1" class="">
+                            Accions formatives adreçades a famílies            </option>
+                                <option value="A2" class="">
+                            Organitzar activitats de trobada i oci            </option>
+                                <option value="A3" class="">
+                            Grups de suport de famílies            </option>
+                                <option value="A4" class="">
+                            Recollir necessitats de futur de les famílies            </option>
+                                <option value="A5" class="">
+                            Implicar a les famílies en projectes de futur            </option>
+                        </select>
+
+                <!-- Hidden form: maybe can be replaced with ranking.js -->
+                <input type="hidden" id="java489893X409X124124" disabled="disabled" value="">
+            </li>
+
+            <li class="select-item">
+                <label for="answer489893X409X124125">
+                    Elecció de rànquing 5    </label>
+
+                <select class="form-control" name="489893X409X124125" id="answer489893X409X124125">
+                                <option value="" selected="" class="">
+                            Tria...            </option>
+                                <option value="A1" class="">
+                            Accions formatives adreçades a famílies            </option>
+                                <option value="A2" class="">
+                            Organitzar activitats de trobada i oci            </option>
+                                <option value="A3" class="">
+                            Grups de suport de famílies            </option>
+                                <option value="A4" class="">
+                            Recollir necessitats de futur de les famílies            </option>
+                                <option value="A5" class="">
+                            Implicar a les famílies en projectes de futur            </option>
+                        </select>
+
+                <!-- Hidden form: maybe can be replaced with ranking.js -->
+                <input type="hidden" id="java489893X409X124125" disabled="disabled" value="">
+            </li>
+                </ul><div class="dragDropTable" aria-hidden="true">       <div class="columns2">        <strong class="SortableTitle">Les opcions</strong>        <div class="ui-state-default dragDropChoices">           <ul id="sortable-choice-12412" class="connectedSortable12412 dragDropChoiceList ui-sortable" style="min-height: 155px;">                        <li class="ui-state-default choice ui-sortable-handle" id="javatbd489893X409X12412A1" style="min-height: 20px;">
+                        Accions formatives adreçades a famílies        </li><li class="ui-state-default choice ui-sortable-handle" id="javatbd489893X409X12412A2" style="min-height: 20px;">
+                        Organitzar activitats de trobada i oci         </li><li class="ui-state-default choice ui-sortable-handle" id="javatbd489893X409X12412A3" style="min-height: 20px;">
+                        Grups de suport de famílies         </li><li class="ui-state-default choice ui-sortable-handle" id="javatbd489893X409X12412A4" style="min-height: 20px;">
+                        Recollir necessitats de futur de les famílies        </li><li class="ui-state-default choice ui-sortable-handle" id="javatbd489893X409X12412A5" style="min-height: 20px;">
+                        Implicar a les famílies en projectes de futur        </li></ul>         </div>       </div>      <div class="columns2">        <strong class="SortableTitle">La teva classificació</strong>        <div class="ui-state-default dragDropRanks">           <ol id="sortable-rank-12412" class="connectedSortable12412 dragDropRankList selectionSortable ui-sortable" style="min-height: 155px;">                        </ol>         </div>       </div>     </div>
+
+                <div style="display:none" id="ranking-12412-maxans">
+                    5    </div>
+
+                <div style="display:none" id="ranking-12412-minans">
+                    0    </div>
+
+                <div style="display:none" id="ranking-12412-name">
+                    489893X409X12412    </div>
+            </div>
+
+            <!--  The list with HTML answers -->
+            <div style="display:none">
+                        <div id="htmlblock-12412-A1">
+                        Accions formatives adreçades a famílies        </div>
+                        <div id="htmlblock-12412-A2">
+                        Organitzar activitats de trobada i oci         </div>
+                        <div id="htmlblock-12412-A3">
+                        Grups de suport de famílies         </div>
+                        <div id="htmlblock-12412-A4">
+                        Recollir necessitats de futur de les famílies        </div>
+                        <div id="htmlblock-12412-A5">
+                        Implicar a les famílies en projectes de futur        </div>
+                </div>
+
+
+            <script type="text/javascript">
+                <!--
+                var aRankingTranslations = {
+                     choicetitle: 'Les opcions',
+                     ranktitle: 'La teva classificació',
+                     rankhelp: 'Fes doble clic o bé agafa i arrossega els elements de la llista de l\'esquerra per moure\'ls cap a la llista de la dreta. El primer element (en importància) del rànquing ha de ser a la posició més alta, mentre que el darrer element ha d\'ocupar a la posició més baixa.'
+                    };
+
+                doDragDropRank(12412, 1,1,1);
+                -->
+            </script>
+            <!-- end of answer -->
+
+                        </div>
+                    </div>
+
+                    <!-- Question help -->
+                    <div class="row question-wrapper">
+                        <div class="col-sm-12 question-help">
+
+                        </div>
+                    </div>
+                </div>
+
 <!-- PRESENT THE QUESTIONS (in SurveyRunTime )  -->
 <!-- Question -->
     <div  id="question11992" class="array-flexible-row  mandatory col-xs-12 question-container">

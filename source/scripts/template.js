@@ -271,3 +271,44 @@ $(window).scroll(function() {
         $("body").removeClass("scrolled");
     }
 }); //missing );
+
+$(document).ready(function() {
+    $('.slider-container').parent().addClass('slider-container_holder');
+});
+
+
+if (!String.prototype.trim) {
+    (function() {
+        // Make sure we trim BOM and NBSP
+        var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+        String.prototype.trim = function() {
+            return this.replace(rtrim, '');
+        };
+    })();
+}
+
+function refresh_linked_questions(checkboxes,selectors){
+    if(
+        $('#'+selectors).length &&
+        $('#'+checkboxes).length
+    ){
+        $('#'+selectors).find('.dragDropChoices .choice').hide();
+        $('#'+checkboxes).find('input:checked').each(function(){
+            var checkedText = trim($(this).closest('.question-item').find('.label-text').html());
+            $('#'+selectors).find('.dragDropChoices .choice').each(function(){
+                if(trim($(this).html()) == checkedText){
+                    $(this).show();
+                }
+            });
+        });
+    }
+}
+
+$(document).ready(function(){
+    $('#question12378 input:checkbox, #question12405 input:checkbox, #question12415 input:checkbox, #question12424 input:checkbox').change(function(){
+        refresh_linked_questions('question12378','question12391');
+        refresh_linked_questions('question12405','question12412');
+        refresh_linked_questions('question12415','question12421');
+        refresh_linked_questions('question12424','question12433');
+    });
+});
