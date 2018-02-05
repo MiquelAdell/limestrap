@@ -258,3 +258,16 @@ window.alert = function(message, title) {
         $("#bootstrap-alert-box-modal").modal('show');
     });
 };
+
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 50) {
+        //clearHeader, not clearheader - caps H
+        $("body").addClass("scrolled");
+    } else {
+        $("body").removeClass("scrolled");
+    }
+}); //missing );

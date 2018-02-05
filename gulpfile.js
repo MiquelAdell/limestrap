@@ -28,7 +28,7 @@ var config = {
 	srcDir: './source',
 
 	browserSyncOptions: {
-		proxy: "http://limesurvey.test/limestrap/",
+		proxy: "http://lime.test/limestrap/",
 		notify: true
 	}
 };
@@ -152,7 +152,7 @@ gulp.task('zip', function(){
 		.pipe(print(function(filepath) {
 			return "zipping from: " + filepath;
 		}))
-        .pipe(zip('esports_barcelona.zip'))
+        .pipe(zip('fundacio_el_maresme.zip'))
 		.pipe(print(function(filepath) {
 			return "zipping to: " + filepath;
 		}))
