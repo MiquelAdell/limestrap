@@ -57,20 +57,24 @@ body .bg-light {
           background-image: url("../images/logo.png");
           background-size: contain;
           background-repeat: no-repeat;
-          background-position: center;
+          background-position: left;
           float: left;
           margin-right: 1em;
         }
-        line-height: 65px;
         transition-property: all;
         transition-duration: 0.5s;
         float: left;
-        color: black;
-        font-weight: bold;
-    }
-    a, a:hover, a:active {
-      color: black;
-      text-decoration: underline;
+
+        background-image: url("../images/LOGO_ME2022_petit.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        text-indent: -90000px;
+        margin: 10px;
+
+        width: 510px;
+        height: 65px;
+
     }
     .row {
       padding-top: 65px !important;
@@ -80,10 +84,27 @@ body .bg-light {
 body.scrolled .bg-light {
   .navbar-brand {
       &:before {
+        width: 93px;
         height: 32px;
       }
-      line-height: 32px;
+      width: 260px;
+      height: 32px;
   }
+}
+
+@media (max-width: 782px){
+  .navbar-brand {
+      &:before {
+        width: 93px !important;
+        height: 32px !important;
+      }
+      width: 260px !important;
+      height: 32px !important;
+  }
+}
+
+.navbar-light .navbar-toggler {
+  margin: 5px 12px;
 }
 
 
