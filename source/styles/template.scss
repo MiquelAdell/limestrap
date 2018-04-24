@@ -1130,3 +1130,23 @@ form > .row {
 body div.row .question-container {
     margin-bottom: 0;
 }
+
+
+
+body .bg-light .navbar-brand:before {
+    width: 50px;
+}
+body.scrolled .bg-light .navbar-brand:before {
+    width: 50px;
+}
+body .bg-light .navbar-brand {
+    text-indent: 0;
+    line-height: 66px;
+    text-transform: none;
+    width: auto;
+}
+
+body.scrolled .bg-light .navbar-brand {
+    width: auto;
+    line-height: 66px;
+}
