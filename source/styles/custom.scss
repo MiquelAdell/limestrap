@@ -1,18 +1,14 @@
 
 body {
-    min-height: 75rem;
-    padding-top: 100px;
+  margin: 0; // 1
+  font-family: $font-family-base !important;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  color: $body-color;
+  text-align: left; // 3
+  background-color: $body-bg; // 2
 }
-
-html body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-$primary:       #cf1d17;
-$brand-primary: $primary;
-$secondary:     #2c3e50;
-$success: $primary;
-$brand-secondary: $secondary;
 
 
 .checkbox input[type=checkbox]:checked+label::before, .checkbox input[type=radio]:checked+label::before {
@@ -42,6 +38,7 @@ body .bg-light {
     background: white !important;
     padding: 0;
     margin: 0;
+    z-index: 1090;
 
     .navbar-brand {
         color: #333!important;
@@ -79,16 +76,16 @@ body .bg-light {
     }
 }
 
-body.scrolled .bg-light {
-  .navbar-brand {
-      &:before {
-        width: 93px;
-        height: 45px;
-      }
-      width: 260px;
-      height: 52px;
-  }
-}
+// body.scrolled .bg-light {
+//   .navbar-brand {
+//       &:before {
+//         width: 93px;
+//         height: 45px;
+//       }
+//       width: 260px;
+//       height: 52px;
+//   }
+// }
 
 @media (max-width: 782px){
   .navbar-brand {
@@ -406,4 +403,74 @@ body .text-info {
   margin-top: -5px;
   border-width: 0 5px 5px;
   border-bottom-color: #000000;
+}
+
+
+#clearallbtnlink {
+  display: none;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 90px !important; /* Margin bottom by footer height */
+  margin-top: 100px !important;
+  min-height: 90vh;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 90px; /* Set the fixed height of the footer here */
+  line-height: 30px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+
+.custom-share {
+	width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    background-color: rgba(0,0,0,0.25);
+	padding: 15px;
+	cursor: pointer;
+	float: left;
+	margin: 5px;
+}
+.custom-share:hover {
+	background-color: rgba(0,0,0,0.5);
+}
+.custom-share:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.custom-share.twitter:after {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 244.187" height="244.19" width="300"><path d="M94.72 243.18c112.46 0 173.96-93.168 173.96-173.96 0-2.646-.054-5.28-.173-7.903 11.938-8.63 22.314-19.4 30.498-31.66-10.955 4.87-22.744 8.147-35.11 9.625 12.622-7.57 22.313-19.543 26.885-33.817-11.813 7.004-24.895 12.093-38.824 14.84C240.8 8.423 224.916.99 207.326.99c-33.763 0-61.143 27.38-61.143 61.13 0 4.8.537 9.466 1.586 13.942-50.816-2.556-95.875-26.886-126.03-63.88-5.252 9.036-8.28 19.53-8.28 30.73 0 21.212 10.794 39.938 27.208 50.893-10.03-.31-19.454-3.063-27.69-7.646-.01.255-.01.505-.01.78 0 29.61 21.076 54.33 49.052 59.933-5.137 1.4-10.543 2.152-16.122 2.152-3.933 0-7.766-.387-11.49-1.103 7.783 24.293 30.354 41.97 57.114 42.465-20.926 16.402-47.287 26.17-75.937 26.17-4.93 0-9.798-.28-14.584-.845 27.06 17.344 59.19 27.464 93.723 27.464"/></svg>');
+}
+.custom-share.facebook:after {
+	background-image: url('data:image/svg+xml;utf8,<svg height="56.693" viewBox="0 0 56.693 56.693" width="56.693" xmlns="http://www.w3.org/2000/svg"><path d="M40.43 21.74h-7.645v-5.015c0-1.883 1.248-2.322 2.127-2.322h5.395V6.125l-7.43-.03c-8.248 0-10.125 6.175-10.125 10.126v5.52h-4.77v8.53h4.77v24.136h10.033V30.27h6.77l.875-8.53z"/></svg>');
+}
+.custom-share.whatsapp:after {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90"><path d="M90 43.84c0 24.214-19.78 43.842-44.182 43.842-7.747 0-15.025-1.98-21.357-5.455L0 90l7.975-23.522c-4.023-6.606-6.34-14.354-6.34-22.637C1.635 19.63 21.415 0 45.818 0 70.223 0 90 19.628 90 43.84zM45.818 6.983c-20.484 0-37.146 16.535-37.146 36.86 0 8.064 2.63 15.533 7.076 21.61l-4.64 13.688 14.274-4.53c5.865 3.85 12.89 6.1 20.437 6.1 20.48 0 37.14-16.53 37.14-36.854S66.3 6.986 45.82 6.986zm22.31 46.956c-.272-.45-.993-.72-2.075-1.26-1.084-.54-6.41-3.14-7.4-3.5-.993-.36-1.717-.54-2.438.534-.72 1.076-2.797 3.495-3.43 4.212-.632.72-1.263.81-2.347.27-1.082-.537-4.57-1.673-8.708-5.333-3.22-2.846-5.393-6.362-6.025-7.44-.63-1.074-.066-1.655.475-2.19.488-.48 1.084-1.254 1.625-1.88.543-.63.723-1.075 1.082-1.793.363-.72.182-1.345-.09-1.884-.27-.537-2.438-5.825-3.34-7.977-.902-2.15-1.803-1.795-2.436-1.795-.63 0-1.35-.09-2.07-.09s-1.89.27-2.89 1.346c-.99 1.077-3.79 3.677-3.79 8.964 0 5.286 3.88 10.395 4.42 11.11.54.72 7.49 11.92 18.5 16.224 11.01 4.3 11.01 2.864 13 2.684 1.99-.18 6.41-2.6 7.31-5.107.9-2.513.9-4.664.63-5.112z"/></svg>');
+}
+.custom-share.telegram:after {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 189.473 189.473"><path d="M152.53 179.476c-1.48 0-2.95-.438-4.21-1.293l-47.64-32.316-25.553 18.386c-2.004 1.44-4.587 1.804-6.914.972-2.324-.834-4.09-2.76-4.72-5.146l-12.83-48.63L4.82 93.92C1.936 92.82.02 90.06 0 86.97c-.02-3.09 1.855-5.875 4.727-7.02L179.04 10.59c.79-.334 1.62-.53 2.47-.58.3-.017.6-.017.9 0 1.75.104 3.463.816 4.803 2.13.14.136.27.275.396.42 1.11 1.268 1.72 2.814 1.834 4.39.03.395.026.796-.01 1.197-.023.28-.064.57-.12.85L159.9 173.38c-.473 2.48-2.16 4.556-4.493 5.523-.925.384-1.902.573-2.874.573zm-47.668-48.897l42.438 28.78 22.89-120.12-82.687 79.56 17.156 11.636c.07.044.13.09.2.136zm-35.327-6.41l5.682 21.53 12.242-8.81-16.03-10.875c-.75-.504-1.39-1.13-1.9-1.847zm-41.4-37.398l31.48 12.035c2.254.862 3.956 2.76 4.572 5.092l3.992 15.127c.18-1.743.97-3.385 2.25-4.622l78.79-75.814L28.13 86.78z"/></svg>');
+}
+
+.barcelona-logo {
+    background-image: url("../images/llima.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 50px;
+    width: 200px;
 }

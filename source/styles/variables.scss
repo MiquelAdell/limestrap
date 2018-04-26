@@ -1,1 +1,8 @@
-$font-family-base: "Arial", "Helvetica" sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+$font-family-base: "Ubuntu","Arial", "Helvetica" sans-serif;
+$primary:       #037DBA;
+$brand-primary: $primary;
+$secondary:     #404041;
+$success: $primary;
+$brand-secondary: $secondary;

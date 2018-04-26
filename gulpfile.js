@@ -152,7 +152,7 @@ gulp.task('zip', function(){
 		.pipe(print(function(filepath) {
 			return "zipping from: " + filepath;
 		}))
-        .pipe(zip('joventut2018.zip'))
+        .pipe(zip('personesCooperatives.zip'))
 		.pipe(print(function(filepath) {
 			return "zipping to: " + filepath;
 		}))

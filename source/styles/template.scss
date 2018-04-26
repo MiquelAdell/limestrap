@@ -1,3 +1,5 @@
+
+
 .remove-margins {
     margin: 0;
 }
@@ -287,10 +289,6 @@ li.responsive-content
 
 #surveyListFooter div{
 
-}
-
-html, body {
-    height: 90%;
 }
 
 /**
@@ -1111,10 +1109,6 @@ form > .row {
     }
 }
 
-.footer {
-    display: none;
-}
-
 //_______________
 // template fixes
 //_______________
@@ -1134,19 +1128,11 @@ body div.row .question-container {
 
 
 body .bg-light .navbar-brand:before {
-    width: 50px;
-}
-body.scrolled .bg-light .navbar-brand:before {
-    width: 50px;
+    width: 50px !important;
 }
 body .bg-light .navbar-brand {
-    text-indent: 0;
-    line-height: 66px;
-    text-transform: none;
-    width: auto;
-}
-
-body.scrolled .bg-light .navbar-brand {
-    width: auto;
-    line-height: 66px;
+    text-indent: 0 !important;
+    line-height: 66px !important;
+    text-transform: none !important;
+    width: auto !important;
 }
